@@ -7,6 +7,10 @@
 
 }
 
+.nav-link{
+    color: #47525e !important;
+}
+
 .img-icones{
     width: 30px;
     height: 30px;
@@ -15,6 +19,14 @@
 
     border: none;
     background: none;
+
+}
+
+
+#categoria{
+    
+ font-size: 20px !important;
+
 
 }
 
@@ -110,6 +122,16 @@
  
  }
 
+
+
+ #departamentos:hover #categoria{
+   
+    color: white !important;
+    
+    
+ }
+ 
+
  #departamentos{
    
     margin-left: 0!important;
@@ -181,6 +203,11 @@
 
      }
 
+    #categoria{
+
+      display: none;
+
+    }
     .itens-menu{display: none;}
     .itens-menu-show{display:inline}
     
@@ -198,6 +225,34 @@
    
 
 }
+
+@media screen and (max-width: 360px) {
+    
+
+    .carrinho-tela-pequena{
+
+        position: relative;
+        right: 10%;
+
+    }
+  
+    #logo-img{
+
+        width: 80px;
+        height: 55px;
+        position: relative;
+        right: 23%;
+
+
+    }
+
+    .cat{
+        position: relative;
+        right: 5%;
+    }
+
+}
+
 
 .div-fonte{
     position: relative;
