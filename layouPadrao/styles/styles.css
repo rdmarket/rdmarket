@@ -237,6 +237,7 @@
 .footer-container {
     margin-bottom: 0px!;
     background-color: rgba(211, 207, 207, 0.3);
+    padding-left: 9%;
 }
 
 .titulo-footer {
@@ -247,4 +248,8 @@
 
 .link-footer {
     color: #47525e;
+}
+
+.link-footer:hover {
+    text-decoration: none;
 }
