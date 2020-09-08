@@ -232,3 +232,19 @@
     font-weight: 700;
 
 }
+
+/* ------FOOTER----- */
+.footer-container {
+    margin-bottom: 0px!;
+    background-color: rgba(211, 207, 207, 0.3);
+}
+
+.titulo-footer {
+    color: #c81e21;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.link-footer {
+    color: #47525e;
+}
