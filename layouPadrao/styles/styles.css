@@ -238,6 +238,8 @@
     margin-bottom: 0px!;
     background-color: rgba(211, 207, 207, 0.3);
     padding-left: 9%;
+    position: relative;
+    bottom: -100vh;
 }
 
 .titulo-footer {
