@@ -1,3 +1,4 @@
+
 #barra-cinza{
     border-top:solid 1px lightgray;
 }
@@ -73,10 +74,40 @@
      height: 25px;   
 }
 
+#div-faleConosco{
+    display: none;
+}
+.dropdown-menu{
+    padding: 0;
+}
+.dropdown-item{
 
+    background-color:#C81E21;
+    color: white;
+}
 
+.dropdown-toggle{
+    color: white;
+}
+.dropdown-toggle:hover{
+    color: white;
+}
 @media screen and (max-width: 350px) {
     #img-centro{
         margin-right:25%;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .textos{
+        display: none !important;
+    }
+    #faleConosco{
+        display: none;
+    }
+    #div-faleConosco{
+        display: block;
+    
+    }
+}
+
