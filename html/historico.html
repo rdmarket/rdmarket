@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Meus pedidos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -13,6 +13,7 @@
 
 <body>
 
+    <!-------- INICIO HEADER ----------->
     <div class="container tela-grande">
         <div class="d-flex justify-content-between mt-5">
 
@@ -21,6 +22,13 @@
                 <img id="logo-img" src="../imagens/logo.png" type="img">
 
             </div>
+
+            <div id="saudar-cliente" class="d-flex flex-md-row justify-content-center">
+                    <div class="texto-saudar-cliente">
+                        Olá, &ltnome_do_cliente&gt!
+                    </div>
+            </div>
+
             <div id="barra-pesquisa" class="borda-flex-tamanho">
                 <div class="input-group mb-3 mt-5">
                     <input type="text" class="form-control tamanhoInput" placeholder="pesquise seu produto"
@@ -48,7 +56,7 @@
                     0
                 </div>
                 <div class="div-fonte">
-                    <span class="fonte-carrinho-total fonte-forte">Total: R$ 1000,00</span>
+                    <span class="fonte-carrinho-total fonte-forte">Total: R$ &lt total &gt</span>
                 </div>
             </div>
 
@@ -61,7 +69,8 @@
                             <li id="departamentos" class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="navbar-toggler-icon fundo-ham"></span><span id="categoria">Categorias</span>
+                                    <span class="navbar-toggler-icon fundo-ham"></span><span
+                                        id="categoria">Categorias</span>
                                 </a>
 
 
@@ -74,7 +83,7 @@
 
                                 </div>
                             </li>
-                            <li  class="nav-item itens-menu">
+                            <li class="nav-item itens-menu">
                                 <a class="nav-link" href="#">Ofertas<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item itens-menu">
@@ -173,14 +182,145 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+    <!-------- FIM HEADER ----------->
+
+    <hr>
+
+    <!----------- INICIO BARRA VERMELHA ------------->
+    <div id="barra-vermelha" class="d-flex flex-md-row justify-content-between">
+        <div class="ml-md-5 mr-md-0 ml-sm-5 ml-5">
+
+            <div id="bt-minha-conta" class="dropdown">
+                <button class="btn dropdown-toggle font-minha-conta mb-2" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Minha conta
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item hover-item" href="#">Alterar meus dados</a>
+                    <a class="dropdown-item hover-item" href="#">Meus endereços</a>
+                    <a class="dropdown-item hover-item" href="#">Meus pedidos</a>
+                </div>
 
 
+                <span id="titulo-meus-pedidos" class="pl-5">Meus pedidos</span>
+            </div>
+        </div>
+
+        <div class="ml-md-auto mr-md-4 pesquisa-pedido">
+            <div id="barra-pesquisa" class="borda-flex-tamanho">
+                <div class="input-group mb-3 mt-2">
+                    <input type="text" class="input-pedido" placeholder="Pesquise pelo nº do pedido"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bt-pesquisa-pedido" type="button"
+                            id="button-addon2"><img width="18px" height="18px" src="../imagens/pesquisa.svg"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------FIM BARRA VERMELHA --------->
+
+
+    <!--------INÍCIO ITEM DO HISTORICO----->
+
+    <!-----EM PROCESSAMENTO------>
+    <section>
+    <div class="container mt-5 container-historico">
+        <div class="row item-historico em-processamento">
+            <div id="numero-pedido" class="col-12">
+                Pedido &lt nº do pedido &gt
+                <hr id="linha-pedido">
+                <div class="row">
+                    <div id="status-pedido" class="col-md-6 col-sm 12">
+                        <span>Status do pedido: &lt status &gt</span>
+                    </div>
+        
+                    <div id="qtd-itens-pedido" class="col-md-6 col-sm 12">
+                        <span>Quantidade de itens: &lt qtd R$ &gt</span>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div id="data-pedido" class="col-md-6 col-sm-12">
+                        <span>Data do pedido: &lt dd/mm/aaaa &gt</span>
+                    </div>
+        
+                    <div id="total-compra-historico" class="col-md-6 col-sm 12">
+                        <span>Total da compra: &lt total R$ &gt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!------ENTREGUE------>
+        <div class="row mt-4 item-historico entregue">
+            <div id="numero-pedido" class="col-12">
+                Pedido &lt nº do pedido &gt
+                <hr id="linha-pedido">
+
+                <div class="row">
+                    <div id="status-pedido" class="col-md-6 col-sm 12">
+                        <span>Status do pedido: &lt status &gt</span>
+                    </div>
+        
+                    <div id="qtd-itens-pedido" class="col-md-6 col-sm 12">
+                        <span>Quantidade de itens: &lt qtd R$ &gt</span>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div id="data-pedido" class="col-md-6 col-sm-12">
+                        <span>Data do pedido: &lt dd/mm/aaaa &gt</span>
+                    </div>
+        
+                    <div id="total-compra-historico" class="col-md-6 col-sm 12">
+                        <span>Total da compra: &lt total R$ &gt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!------CANCELADO------>
+    <div class="row mt-4 item-historico cancelado">
+        <div id="numero-pedido" class="col-12">
+            Pedido &lt nº do pedido &gt
+            <hr id="linha-pedido">
+
+            <div class="row">
+                <div id="status-pedido" class="col-md-6 col-sm 12">
+                    <span>Status do pedido: &lt status &gt</span>
+                </div>
+    
+                <div id="qtd-itens-pedido" class="col-md-6 col-sm 12">
+                    <span>Quantidade de itens: &lt qtd R$ &gt</span>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div id="data-pedido" class="col-md-6 col-sm-12">
+                    <span>Data do pedido: &lt dd/mm/aaaa &gt</span>
+                </div>
+    
+                <div id="total-compra-historico" class="col-md-6 col-sm 12">
+                    <span>Total da compra: &lt total R$ &gt</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     </div>
-</div>
-<hr>
-<!-- <div class="container-fluid tamanho-container-footer"> -->
+</section>
+
+    <!------ENTREGUE------>  
+
+   
+    <!-------- INICIO FOOTER----------->
+    <!-- <div class="container-fluid tamanho-container-footer"> -->
     <footer class="page-footer font-small blue mt-5 pt-4 footer-container">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
@@ -259,7 +399,7 @@
             </div>
     </footer>
 
-    <!-- </div> -->
+    <!-------- FIM FOOTER ----------->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

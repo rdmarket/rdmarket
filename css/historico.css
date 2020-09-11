@@ -7,6 +7,21 @@
 
 }
 
+#saudar-cliente {
+
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 37%;
+
+}
+
+.texto-saudar-cliente {
+
+    color: #C81E21;
+    font-weight: bold;
+
+}
+
 .nav-link{
     color: #47525e !important;
 }
@@ -47,6 +62,7 @@
   width: 20px;
 
 }
+
 
 .fonte-carrinho-quantidade{
     
@@ -185,6 +201,12 @@
     display: none;
 }
 
+.pesquisa-pedido {
+    
+    width: 20%;
+    margin-left: 0px;
+}
+
 @media screen and (max-width: 992px) {
     
      .tela-grande{
@@ -288,6 +310,147 @@
 
 }
 
+
+/*------ BARRA VERMELHA ------*/
+
+#barra-vermelha{
+
+    background-color:#C81E21;
+    padding:10px;
+    margin: 0;
+    
+}
+
+.dropdown-menu{
+
+    padding: 0;
+    height: 150px;
+}
+.dropdown-item{
+
+    
+    background-color:#C81E21;
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    padding-top: 6%;
+
+}
+
+
+.dropdown-toggle{
+
+    color: white;
+}
+
+.dropdown-toggle:hover{
+
+    color: white;
+}
+
+.hover-item:hover {
+
+    color: #47525e;
+
+}
+
+.font-minha-conta {
+
+    font-size: 20px;
+}
+
+#titulo-meus-pedidos {
+
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.input-pedido {
+
+    width: 45%;
+    height: 30px;
+
+}
+
+
+.bt-pesquisa-pedido {
+
+    padding: 0px;
+    background-color: #969faa;
+    width: 30px;
+    height: 30px;
+
+}
+
+@media screen and (max-width: 350px) {
+   
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+
+
+
+/* ------ITEM-HISTORICO------- */
+
+.container-historico {
+
+    position: absolute;
+    width: 60vw;
+    margin-left: 20%;
+
+}
+
+.item-historico {
+
+    background-color: #47525e15;
+    padding: 20px 10px 20px 10px;
+
+}
+
+.em-processamento {
+
+    border-left: solid 5px orange;
+
+}
+
+
+.entregue {
+
+    border-left: solid 5px #77d353;
+
+}
+
+.cancelado {
+
+    border-left: solid 5px #C81E21;
+}
+
+#linha-pedido {
+
+    color: #969faa;
+    width: 100%;
+
+}
+
+
+#qtd-itens-pedido {
+
+    text-align: right;
+
+}
+
+#total-compra-historico {
+
+    text-align: right;
+    font-weight: bold;
+}
+
+
 /* ------FOOTER----- */
 .footer-container {
     position: relative;
@@ -297,7 +460,7 @@
     padding-left: 9%;
 
     position: relative;
-    bottom: -100vh;
+    bottom: -90vh;
 }
 
 
