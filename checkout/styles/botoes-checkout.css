@@ -1,0 +1,20 @@
+.avancar{
+ 
+    border: none;
+    padding:10px 0;
+    background-color:#77D353; 
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 80%;
+}
+.retornar{
+    background-color: white;
+    border: solid 1px #C81E21;
+    padding:10px 0;
+    color: #C81E21;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 80%;
+
+}

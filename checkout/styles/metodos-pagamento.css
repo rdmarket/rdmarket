@@ -1,0 +1,57 @@
+.metodos-pagamento h5{
+
+    font-size: 18px;
+    
+
+
+}
+
+.borda-metodos{
+    border: solid 1px darkgrey;
+    padding: 5px;
+    
+}
+
+.pagamento-div h5{
+
+    font-weight: 700;
+    
+}
+
+.pagamento-div h6{
+
+    font-weight: 700;
+    
+}
+
+.metodos-pagamento{
+    height: 160px;
+}
+
+#img-bandeiras{
+    width: 50%;
+}
+
+.borda-teste{
+    border: solid 1px darkgrey;
+}
+
+.pagamento-div input{
+    height: 35px;
+    border-radius: 4px;
+    border: solid 1px darkgrey;
+
+}
+.pagamento-div select{
+    height: 35px;
+    border-radius: 4px;
+    border: solid 1px darkgrey;
+    background-color: white;
+
+}
+
+.pagamento-div{
+    padding: 20px;
+    
+}
+
