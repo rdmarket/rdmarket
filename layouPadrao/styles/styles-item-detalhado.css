@@ -1,5 +1,6 @@
 ul{
     list-style: none;
+    padding: 0px;
 }
 .barra-vermelha {
     background-color: #c81e21 !important;
@@ -96,8 +97,37 @@ ul{
     border-radius: 10px 10px;
 }
 
+
+
 @media screen and (max-width: 768px){
     .miniaturas-responsivo{
         display: none;
+    }
+    #imagem-grande-responsivo{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .item-barra-vermelha{
+        display: none;
+    }
+    .diretorio{
+        margin: 0px !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #container-imagem{
+        display: none !important;
+    }
+    .btn-comprar{
+        margin: 0px;
+    }   
+}
+
+@media screen and (max-width: 418px){
+    #descricao{
+        display: none !important;
     }
 }
