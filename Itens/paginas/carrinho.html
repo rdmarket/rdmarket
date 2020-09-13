@@ -84,8 +84,8 @@
                             <li><button class = "btn-qtde menos mt-3">-</button></li>
                             <li>
                                 <ul class="display-qtde text-center mt-1">
-                                    <li>Qtd:</li>
-                                    <li class="qtde-item">1</li>
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
                                 </ul>
                             </li>
                             <li><button class = "btn-qtde mais mt-3">+</button></li>
@@ -106,8 +106,8 @@
                             <li><button class = "btn-qtde menos mt-3">-</button></li>
                             <li>
                                 <ul class="display-qtde text-center mt-1">
-                                    <li>Qtd:</li>
-                                    <li class="qtde-item">1</li>
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
                                 </ul>
                             </li>
                             <li><button class = "btn-qtde mais mt-3">+</button></li>
@@ -128,8 +128,8 @@
                             <li><button class = "btn-qtde menos mt-3">-</button></li>
                             <li>
                                 <ul class="display-qtde text-center mt-1">
-                                    <li>Qtd:</li>
-                                    <li class="qtde-item">1</li>
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
                                 </ul>
                             </li>
                             <li><button class = "btn-qtde mais mt-3">+</button></li>
@@ -150,8 +150,8 @@
                             <li><button class = "btn-qtde menos mt-3">-</button></li>
                             <li>
                                 <ul class="display-qtde text-center mt-1">
-                                    <li>Qtd:</li>
-                                    <li class="qtde-item">1</li>
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
                                 </ul>
                             </li>
                             <li><button class = "btn-qtde mais mt-3">+</button></li>
@@ -172,8 +172,8 @@
                             <li><button class = "btn-qtde menos mt-3">-</button></li>
                             <li>
                                 <ul class="display-qtde text-center mt-1">
-                                    <li>Qtd:</li>
-                                    <li class="qtde-item">1</li>
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
                                 </ul>
                             </li>
                             <li><button class = "btn-qtde mais mt-3">+</button></li>
@@ -194,8 +194,30 @@
                             <li><button class = "btn-qtde menos mt-3">-</button></li>
                             <li>
                                 <ul class="display-qtde text-center mt-1">
-                                    <li>Qtd:</li>
-                                    <li class="qtde-item">1</li>
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
+                                </ul>
+                            </li>
+                            <li><button class = "btn-qtde mais mt-3">+</button></li>
+                        </ul>
+                        <li><button class = "btn-excluir mt-4"><img id="img-excluir" src="../imagens/lixo.png"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="d-flex justify-content-around tamanho-carrinho">
+                        <li>
+                            <div id="imagem-carrinho"> 
+                                <img src="../imagens/feijao.png" alt="..."  class="img-thumbnail grande-img">
+                            </div>
+                        </li>
+                        <li><h1 class = "tamanho-titulo mt-4">Feijão Carioca Kicaldo - Tipo 1 Pacote 1 Kg</h1></li>
+                        <li class="preco mt-4">R$ 7,99</li>
+                        <ul class="qtde-item-carrinho d-flex">
+                            <li><button class = "btn-qtde menos mt-3">-</button></li>
+                            <li>
+                                <ul class="display-qtde text-center mt-1">
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
                                 </ul>
                             </li>
                             <li><button class = "btn-qtde mais mt-3">+</button></li>
@@ -212,7 +234,7 @@
             <ul class="modo-coluna">
                 <li>
                     <div class="total">
-                        <h2>Total: R$ 100,00<h2>
+                        <h2 id = "valor">Total: R$ 100,00<h2>
                     </div>
                 </li>
                 <li>
