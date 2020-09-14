@@ -7,20 +7,6 @@
 
 }
 
-#saudar-cliente {
-
-    position: absolute;
-    margin-top: -20px;
-    margin-left: 37%;
-
-}
-
-.texto-saudar-cliente {
-
-    color: #C81E21;
-    font-weight: bold;
-
-}
 
 .nav-link{
     color: #47525e !important;
@@ -57,11 +43,6 @@
     
  
  }
-.tamanhoInput{
-
-  width: 20px;
-
-}
 
 
 .fonte-carrinho-quantidade{
@@ -201,12 +182,6 @@
     display: none;
 }
 
-.pesquisa-pedido {
-    
-    width: 20%;
-    margin-left: 0px;
-}
-
 @media screen and (max-width: 992px) {
     
      .tela-grande{
@@ -233,11 +208,7 @@
     .itens-menu{display: none;}
     .itens-menu-show{display:inline}
     
-    #barra-pesquisa{
 
-        width: 100%;
-
-    }
 
     .div-quantidade{
 
@@ -248,6 +219,12 @@
 
 }
 
+@media screen and (max-width: 465px) {
+
+    .borda-flex-tamanho {
+        width: 90vw;
+    }
+}
 @media screen and (max-width: 360px) {
     
 
@@ -313,12 +290,11 @@
 
 /*------ BARRA VERMELHA ------*/
 
-#barra-vermelha{
+.barra-vermelha{
 
     background-color:#C81E21;
-    padding:10px;
-    margin: 0;
-    
+    padding: 10px 10px 6px 10px;
+    display: flex;
 }
 
 .dropdown-menu{
@@ -357,6 +333,7 @@
 .font-minha-conta {
 
     font-size: 20px;
+    color: #ffffff!important;
 }
 
 #titulo-meus-pedidos {
@@ -364,44 +341,111 @@
     font-size: 24px;
     color: white;
     font-weight: bold;
+    padding-left: 3%;
+    width: 100px;
+}
+
+#ola-cliente {
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #C81E21;
 }
 
 
-.input-pedido {
+.pesquisa-pedido{
 
-    width: 45%;
-    height: 30px;
-
+    width: 40vw;
+  
+    
 }
 
 
 .bt-pesquisa-pedido {
 
-    padding: 0px;
     background-color: #969faa;
-    width: 30px;
-    height: 30px;
-
-}
-
-@media screen and (max-width: 350px) {
-   
-}
-
-@media screen and (max-width: 700px) {
 
 }
 
 
+@media screen and (min-width: 811px) {
+
+    .barra-vermelha {
+        justify-content: space-between;
+    }
+
+    .pedidos-tela-pequena {
+        display: none;
+    }
+
+    .pedidos-tela-pequena-2 {
+        display: none;
+    }
+
+    .tamanho-input-pedido {
+        width: 300px;
+        margin-left: auto;
+        
+    }
+}
+
+@media screen and (max-width: 810px) {
+    
+    .barra-vermelha {
+        justify-content: flex-start;
+    }
+
+    .pedidos-tela-grande {
+
+        display: none;
+    }
+
+    .pedidos-tela-pequena-2 {
+
+        display: none;
+    }
+
+    .tamanho-input-pedido {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 465px) {
+
+    .tamanho-input-pedido {
+        width: 100%;
+        
+    }
+
+    .pedidos-tela-grande {
+        display: none;
+    }
+
+    .pedidos-tela-pequena {
+        display: none;
+    }
+
+    .pedidos-tela-pequena-2 {
+        display: block;
+    }
+    
+    #titulo-meus-pedidos {
+        width: 200px;
+        padding-left: none;
+    }
+}   
 
 
 /* ------ITEM-HISTORICO------- */
 
 .container-historico {
 
-    position: absolute;
-    width: 60vw;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    
 
 }
 
@@ -430,7 +474,7 @@
     border-left: solid 5px #C81E21;
 }
 
-#linha-pedido {
+.linha-pedido {
 
     color: #969faa;
     width: 100%;
@@ -450,17 +494,77 @@
     font-weight: bold;
 }
 
+@media screen and (min-width: 768px) {
+
+    .tela-p {
+        display:none;
+    }
+
+    .tela-g {
+        display: block;
+    }
+
+    .tela-p2 {
+        display: none;
+    }
+
+    .container-historico {
+        width: 800px;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+
+    .tela-p {
+        display: block;
+    }
+
+    .tela-g {
+        display: none;
+    }
+
+    .tela-p2 {
+        display: none;
+    }
+
+    .titulos-pedido-pq {
+        font-weight: bold;
+    }
+
+}
+
+
+
+@media screen and (max-width: 349px) {
+
+    .titulos-pedido-pq {
+        font-weight: bold;
+    }
+
+    .tela-p2 {
+        display: block;
+    }
+
+    .tela-g {
+        display: none;
+    }
+
+    .tela-p {
+        display: none;
+    }
+
+    
+}
 
 /* ------FOOTER----- */
 .footer-container {
-    position: relative;
-    bottom: -100vh;
+   
     margin-bottom: 0px!;
     background-color: rgba(211, 207, 207, 0.3);
     padding-left: 9%;
-
-    position: relative;
-    bottom: -90vh;
+    
+    
 }
 
 
