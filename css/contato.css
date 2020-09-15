@@ -7,20 +7,6 @@
 
 }
 
-#saudar-cliente {
-
-    position: absolute;
-    margin-top: -1%;
-    margin-left: 37%;
-    font-weight: bold;
-
-}
-
-.texto-saudar-cliente {
-
-    color: #C81E21;
-
-}
 
 .nav-link{
     color: #47525e !important;
@@ -354,8 +340,12 @@
 .contato{
 
     margin-top: 5%;
-    margin-left: 12%;
+   
+}
 
+.tamanho-form-contato {
+    width: 80%;
+   
 }
 
 .retorno-contato {
@@ -370,6 +360,7 @@ padding-bottom: 4%;
 font-size: 12px;
 
 }
+
 
 .bt-limpar {
 
@@ -394,7 +385,6 @@ background-color: #77d353;
 border: solid 1px #77d353;
 width: 200px;
 height: 40px;
-margin-left: 27%;
 
 }
 
@@ -452,6 +442,92 @@ a:active {
 
     color: #C81E21;
 }
+
+@media screen and (min-width: 992px) {
+
+
+    .tela-p2 {
+        display: none;
+    }
+
+    .tela-p {
+        display: none;
+    }
+
+    .tela-m {
+        display: none;
+    }
+
+    .tela-g {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .tela-g {
+        display: none;
+    }
+
+    .tela-p {
+        display: none;
+    }
+
+    .tela-p {
+        display: none;
+    }
+
+    .bt-limpar {
+        width: 100px;
+    }
+
+    .bt-enviar {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 363px) and (max-width: 767px) {
+    .tela-g {
+        display: none;
+    }
+
+    .tela-m {
+        display: none;
+    }
+
+    .tela-p {
+        display: none;
+    }
+
+    .alinha-texto {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 362px) {
+
+    .tela-g {
+        display: none;
+    }
+
+    .tela-m {
+        display: none;
+    }
+
+    .tela-p {
+        display: none;
+    }
+
+    .bt-limpar {
+        width: 80px;
+    }
+
+    .bt-enviar {
+        width: 120px;
+    }
+}
+
+
 
 
 /* ------FOOTER----- */

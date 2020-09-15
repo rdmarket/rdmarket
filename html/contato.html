@@ -23,11 +23,6 @@
 
             </div>
 
-            <div id="saudar-cliente" class="d-flex flex-md-row justify-content-center">
-                <div class="texto-saudar-cliente">
-                    Olá, &ltnome_do_cliente&gt!
-                </div>
-            </div>
 
             <div id="barra-pesquisa" class="borda-flex-tamanho">
                 <div class="input-group mb-3 mt-5">
@@ -190,7 +185,7 @@
 
     <!----------- INICIO BARRA VERMELHA ------------->
     <div id="barra-vermelha" class="d-flex flex-md-row justify-content-between">
-        <div class="ml-md-5 mr-md-0 ml-sm-5 ml-5">
+        <div class="ml-md-5 mr-md-0 ml-sm-4">
             <img class="img-phone textos" src="../imagens/headphones.svg">
             <span id="titulo-fale-conosco" class="pl-2">Fale conosco</span>
         </div>
@@ -202,10 +197,10 @@
     <section>
         <div class="container contato">
             <div class="row">
-                <div class="col-md-5 col-sm-12 formulario-contato">
-                    <div class="row">
-                        <div class="col-12">
-                            <form>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row justify-content-center formulario-contato">
+                        
+                            <form class="tamanho-form-contato">
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Nome Completo*</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
@@ -229,12 +224,47 @@
                                 <div class="retorno-contato">
                                     <span id="msg-retorno-contato">Retornaremos uma resposta no seu email.</span>
                                 </div>
-                                <div class="bt-formulario-contato">
-                                    <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
-                                    <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
+
+                                <!---Botões tela grande-->
+                                <div class="row justify-content-around bt-formulario-contato tela-g">
+                                    <div>
+                                        <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+
+                                <!---Botões tela media-->
+                                <div class="row justify-content-around bt-formulario-contato tela-m">
+                                    <div>
+                                        <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+
+                                 <!---Botões tela pequena-->
+                                 <div class="row justify-content-around bt-formulario-contato tela-p">
+                                    <div>
+                                        <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+
+                                 <!---Botões tela pequena2-->
+                                 <div class="row justify-content-around bt-formulario-contato tela-p2">
+                                    <div>
+                                        <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
+                                    </div>
                                 </div>
                             </form>
-                        </div>
                     </div>
                 </div>
 
@@ -243,19 +273,19 @@
 
                 
                 <!----------INICIO FORMAS DE CONTATO--------->
-               <div class="col-md-1 col-sm-0"></div> 
+               <div class="col-md-1 col-sm-0 empty"></div> 
                     <br><br><br><br>
-                <div class="col-md-6 col-sm-12 links-contato">
+                <div class="col-md-5 col-sm-12 links-contato">
                     <div class="row">
                         <div class="col-12">
-                            <div class="titulo-central-atendimento">Central de atendimento</div>
-                            <div class="telefone-central pt-4">
+                            <div class="titulo-central-atendimento alinha-texto" >Central de atendimento</div>
+                            <div class="telefone-central pt-4 alinha-texto">
                                 <img class="img-phone-contato" src="../imagens/headphones-grey.svg">
                                 <span class="texto telefone">4002-8922</span>
                             </div>
-                            <div class="texto pt-4">Horários de atendimento</div>
-                            <div class="texto pt-3">Seg. a Sex. das 08h às 20h - (exceto feriados)</div>
-                            <div class="email-contato pt-4">
+                            <div class="texto pt-4 alinha-texto">Horários de atendimento</div>
+                            <div class="texto pt-3 alinha-texto">Seg. a Sex. das 08h às 20h - (exceto feriados)</div>
+                            <div class="email-contato pt-4 alinha-texto">
                                 <a target="blank" href="mailto:example@email.coml?subjetc=Email do site"><img
                                         class="img-email" src="../imagens/email-svg-grey.svg"> example@email.com</a>
                             </div>

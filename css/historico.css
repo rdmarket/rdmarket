@@ -39,10 +39,15 @@
 
 .borda-flex-tamanho{
   
-  width: 450px;
+  width: 40%;
     
  
  }
+.tamanhoInput{
+
+  width: 20px;
+
+}
 
 
 .fonte-carrinho-quantidade{
@@ -135,11 +140,7 @@
 
     
  }
-#categorias-div{
 
-  margin-top:12px;
-
-}
 
 #departamentos a{
     white-space: nowrap; 
@@ -182,6 +183,13 @@
     display: none;
 }
 
+.pesquisa-pedido {
+    
+    width: 20%;
+    margin-left: 0px;
+}
+
+
 @media screen and (max-width: 992px) {
     
      .tela-grande{
@@ -208,7 +216,11 @@
     .itens-menu{display: none;}
     .itens-menu-show{display:inline}
     
+    #barra-pesquisa{
 
+        width: 100%;
+
+    }
 
     .div-quantidade{
 
@@ -219,12 +231,6 @@
 
 }
 
-@media screen and (max-width: 465px) {
-
-    .borda-flex-tamanho {
-        width: 90vw;
-    }
-}
 @media screen and (max-width: 360px) {
     
 
@@ -286,6 +292,7 @@
     font-weight: 700;
 
 }
+
 
 
 /*------ BARRA VERMELHA ------*/
