@@ -7,27 +7,30 @@
 
 }
 
-.nav-link{
-    color: #47525e !important;
-}
+.borda-flex{
 
-.img-icones{
-    width: 30px;
-    height: 30px;
-}
-.bt-header{
-
-    border: none;
-    background: none;
-
-}
-
-
-#categoria{
+    padding-right:13%;
     
- font-size: 20px !important;
+}
 
+#logo-img{
 
+    width: 100%;
+    height: 100%;
+ 
+ }
+
+.borda-flex-tamanho{
+  
+    width: 40%;
+      
+   
+}
+
+.tamanhoInput{
+
+    width: 20px;
+  
 }
 
 .bt-header-pesquisa{
@@ -36,65 +39,109 @@
 
 }
 
-.borda-flex-tamanho{
-  
-  width: 450px;
-    
- 
- }
-.tamanhoInput{
+.bt-header{
 
-  width: 20px;
+    border: none;
+    background: none;
 
 }
 
-.fonte-carrinho-quantidade{
-    
-    color:white; 
-    margin: auto;
-    font: bold;
+.img-icones{
+    width: 30px;
+    height: 30px;
 }
 
 .div-carrinho{
 
     position: relative;
     right: 13%;
+
+}
+
+.div-quantidade{
+
+    position: relative;
+    top: -35px;
+    left: 13%;
+    border-radius:60%;
+    background-color:#77d353;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    color: white;
+}
+
+.div-fonte{
+
+    position: relative;
+    top: -30px;
+    left: 20%;   
+
+}
+
+.fonte-carrinho-total{
+
+    position: relative;
+    top: -26px;
+    left: 10%;
+    white-space: nowrap; 
     
+        
+}
+
+
+.fonte-forte{
+    font-weight: 700;
 
 }
 
-#logo-img{
-
-   width: 100%;
-   height: 100%;
-
-
-}
 
 .menu{
 
-   width: 100%;
+    width: 100%;
+    padding: 0px;
+    margin-left: -1%;
+ 
+ }
 
+ .menu li{
+
+    margin-left: 10%;
+    
+ 
+ }
+
+ #departamentos{
+   
+    margin-left: 0!important;
+
+    
+ }
+
+ #departamentos:hover #categoria{
+   
+    color: white !important;
+
+ }
+
+ #departamentos a{
+
+    white-space: nowrap; 
 
 }
 
-.menu{
-
-   padding: 0px;
-   margin-left: -1%;
-
-}
-
-.menu li{
-
-   margin-left: 10%;
+#departamentos a:hover{
    
 
-}
+    background-color: #c81e21;
+    color: white !important;
+    border-radius: 20px;
 
-/* .navbar-light .navbar-toggler-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-} */
+ }
+
+.nav-link{
+    color: #47525e !important;
+}
 
 .fundo-ham{
 
@@ -113,6 +160,26 @@
     height: 35px;
 }
 
+#categoria{
+    
+    font-size: 20px !important;
+   
+   
+}
+
+.itens-menu-show{
+
+    display: none;
+ 
+ }
+   
+ .itens-menu a{
+
+    
+    font-size: 20px !important;
+ 
+ }
+
 .itens-menu a:hover{
 
     background-color: #c81e21;
@@ -122,68 +189,19 @@
  
  }
 
+ .barra-pesquisa-responsiva{
 
-
- #departamentos:hover #categoria{
-   
-    color: white !important;
-    
-    
- }
- 
-
- #departamentos{
-   
-    margin-left: 0!important;
-
-    
- }
-#categorias-div{
-
-  margin-top:12px;
-
-}
-
-#departamentos a{
-    white-space: nowrap; 
-}
-
- #departamentos a:hover{
-   
-    
-
-    background-color: #c81e21;
-    color: white !important;
-    border-radius: 20px;
-
- }
-
-.itens-menu-show{
-
-   display: none;
-
-}
-
-.barra-pesquisa-responsiva{
-
-   display: none;
-
-}
-
-.itens-menu a{
-
-    
-    font-size: 20px !important;
+    display: none;
  
  }
-
- .borda-flex{
-     padding-right:13%;
- }
+ 
 
 .tela-pequena{
+
     display: none;
+    
 }
+
 
 @media screen and (max-width: 992px) {
     
@@ -208,8 +226,17 @@
       display: none;
 
     }
-    .itens-menu{display: none;}
-    .itens-menu-show{display:inline}
+
+    .itens-menu {
+
+        display: none;
+
+    }
+
+    .itens-menu-show {
+
+        display:inline
+    }
     
     #barra-pesquisa{
 
@@ -247,57 +274,23 @@
     }
 
     .cat{
+
         position: relative;
         right: 5%;
+
     }
 
 }
 
 
-.div-fonte{
-    position: relative;
-    top: -30px;
-    left: 20%;   
-}
-
-.div-quantidade{
-
-    position: relative;
-    top: -35px;
-    left: 13%;
-    border-radius:60%;
-    background-color:#77d353;
-    width: 21px;
-    height: 21px;
-    text-align: center;
-    color: white;
-}
-
-.fonte-carrinho-total{
-
-    position: relative;
-    top: -26px;
-    left: 10%;
-    white-space: nowrap; 
-    
-        
-}
-
-.fonte-forte{
-    font-weight: 700;
-
-}
-
 /* ------FOOTER----- */
 .footer-container {
-    position: relative;
-    bottom: -100vh;
+   
     margin-bottom: 0px!;
     background-color: rgba(211, 207, 207, 0.3);
     padding-left: 9%;
-
-    position: relative;
-    bottom: -100vh;
+    
+    
 }
 
 
