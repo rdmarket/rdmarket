@@ -26,15 +26,8 @@ ul,li{
     font-size: 18px;
 }
 
-
-
-#img-excluir{
-    width: 35px;
-    height: 35px;
-}
-
-.btn-excluir{
-    border:none;
+.preco{
+    font-weight: bold;
 }
 
 .btn-qtde{
@@ -57,9 +50,16 @@ ul,li{
 #qtde{
     border: solid 2px #77D353;
 }
-.preco{
-    font-weight: bold;
+
+.btn-excluir{
+    border:none;
 }
+
+#img-excluir{
+    width: 35px;
+    height: 35px;
+}
+
 .btn-comprar{
     border:none;
     background-color: #77D353 !important;
@@ -77,6 +77,7 @@ ul,li{
     flex-flow: column wrap;
     margin-left: 20px !important;
 }
+
 
 @media screen and (max-width: 491px){
     #imagem-carrinho{
