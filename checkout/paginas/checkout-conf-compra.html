@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -13,16 +13,23 @@
     <link href="../styles/barra-progresso.css" rel="stylesheet">
     <link href="../styles/confirma-compra.css" rel="stylesheet">
     <link href="../styles/botoes-checkout.css" rel="stylesheet">
+    <link href="../styles/confirmacao.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
 
 <body>
 
+    <div id="confirmacao_sucesso">
+        <a href="../../historico-compra/html/historico.html"><img id="img_xis" src="../imagens/xis.png"></a>
+        <img id="img_sucesso" src="../imagens/sucesso.png">
+    </div>
     <div class="container-fluid">
-
+        
         <div class="row justify-content-center mb-5">
             <div id="img-centro" class="col-md-2 col-5 col-sm-3">
-                <img src="../imagens/logo.png">
+               <a href="../../home/home_flex.html"><img src="../imagens/logo.png"></a>
             </div>
         </div>
 
@@ -648,7 +655,7 @@
 
             </div>
             <div class="text-center col-md-6 col-sm-6 col-12 mb-md-0 mb-sm-0 mb-4 order-md-2 order-sm-2 order-1">
-                <a href="#" class="avancar">Finalizar compra</a>
+                <a href="#" id="toggle" class="avancar">Finalizar compra</a>
             </div>
         </div>
         
@@ -744,6 +751,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function(){
+                
+              $("#toggle").click(function(){
+                $("#confirmacao_sucesso").show();
+              });
+            });
+            
+            </script>
+
+            
+
 </body>
 
 

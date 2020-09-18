@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -128,7 +128,7 @@
 
                         <div class="col-md-10">
                             <h6>CEP</h6>
-                            <input type="text" placeholder="XXXXX-XXX">
+                            <input type="text" placeholder="XXXXX-XXX" required>
                             <a id="link-cep" href="#">Descubra seu CEP</a>
                         </div>
 
@@ -169,7 +169,7 @@
 
                         <div class="col-12 mb-2">
                             <h6>Método de pagamento</h6>
-                            <select>
+                            <select required>
                                 <option>Cartão de crédito</option>
                                 <option>Cartão de débito</option>
                                 <option>Vale alimentação</option>
@@ -181,7 +181,7 @@
 
                         <div class="col-12">
                             <h6>Número do cartão</h6>
-                            <input type="text" placeholder="">
+                            <input type="text" placeholder="" required>
                         </div>
 
                     </div>
@@ -228,14 +228,14 @@
                     <div class="row mb-2">
                         <div class="col-8">
                             <h6>Código de segurança</h6>
-                            <input type="text" placeholder="">
+                            <input type="text" placeholder="" required>
                         </div>
                     </div>
                     <div class="row mb-2">
 
                         <div class="col-12">
                             <h6>Nome do titular</h6>
-                            <input type="text" placeholder="">
+                            <input type="text" placeholder="" required>
                         </div>
 
                     </div>

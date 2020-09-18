@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale conosco</title>
+    <title>Complete seu cadastro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link href="../css/contato.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/styles-barra-vermelha.css" rel="stylesheet">
+    <link href="../styles/stylelogin.css" rel="stylesheet">
 </head>
 
 <body>
+    <!--header-->
 
-    <!-------- INICIO HEADER ----------->
     <div class="container tela-grande">
         <div class="d-flex justify-content-between mt-5">
 
             <div class="borda-flex">
 
-                <a href="../../home/home_flex.html"><img id="logo-img" src="../imagens/logo.png" type="img"></a>
+                <img id="logo-img" src="../imagens/logo.png" type="img">
 
             </div>
-
-
             <div id="barra-pesquisa" class="borda-flex-tamanho">
                 <div class="input-group mb-3 mt-5">
                     <input type="text" class="form-control tamanhoInput" placeholder="pesquise seu produto"
@@ -38,8 +38,8 @@
 
             <div class="mt-5">
 
-                <a class="bt-header"><img class="img-icones" src="../imagens/conta.svg"><span
-                        class="fonte-forte">Conta</span></a>
+                <button class="bt-header"><img class="img-icones" src="../imagens/conta.svg"><span
+                        class="fonte-forte">Conta</span></button>
 
             </div>
             <div class="mt-5 ">
@@ -51,7 +51,7 @@
                     0
                 </div>
                 <div class="div-fonte">
-                    <span class="fonte-carrinho-total fonte-forte">Total: R$&lt total &gt</span>
+                    <span class="fonte-carrinho-total fonte-forte">Total: R$ 1000,00</span>
                 </div>
             </div>
 
@@ -177,146 +177,97 @@
                 </div>
             </div>
         </div>
+
+
+
+
     </div>
-    </div>
-    <!-------- FIM HEADER ----------->
 
-    <hr>
+    <!--barra vermelha-->
+    <div id="barra-vermelha" class="d-flex flex-md-row justify-content-between align-items-center mt-3">
+        <div class="ml-md-4 mr-md-0 ml-sm-5 ml-5">
 
-    <!----------- INICIO BARRA VERMELHA ------------->
-    <div id="barra-vermelha" class="d-flex flex-md-row justify-content-between">
-        <div class="ml-md-5 mr-md-0 ml-sm-4">
-            <img class="img-phone textos" src="../imagens/headphones.svg">
-            <span id="titulo-fale-conosco" class="pl-2">Fale conosco</span>
-        </div>
-    </div>
-    <!---------FIM BARRA VERMELHA --------->
-
-    <!-----INICIO FORMULARIO----->
-
-    <section>
-        <div class="container contato">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="row justify-content-center formulario-contato">
-
-                        <form class="tamanho-form-contato">
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Nome Completo*</label>
-                                <input type="text" class="form-control f-nome-completo" id="exampleFormControlInput1"
-                                    placeholder="Digite seu nome completo" required>
-                                <div class="alert alert-danger alert-nome-completo" style="display:none;" role="alert">
-                                    Este campo deve conter pelo menos 5 caracteres
-                                </div>
-                                <div class="alert alert-danger alert-nomeComNumero" style="display:none;" role="alert">
-                                    Números ou caracteres especiais como (*, @, #, $, %, -, _, etc) não podem ser inseridos neste campo
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Email*</label>
-                                <input type="email" class="form-control f-email" id="exampleFormControlInput1"
-                                    placeholder="name@example.com" required>
-                                <div class="alert alert-danger alert-email" style="display:none;" role="alert">
-                                    Por favor, digite um email válido!
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Assunto*</label>
-                                <input type="text" class="form-control f-assunto" id="exampleFormControlInput1"
-                                    placeholder="Digite o assunto do contato" required>
-                                <div class="alert alert-danger alert-assunto" style="display:none;" role="alert">
-                                    Este campo deve conter pelo menos 10 caracteres
-                                </div>
-                                <div class="alert alert-danger alert-assuntoComNumero" style="display:none;" role="alert">
-                                    Números ou caracteres especiais como (*, @, #, $, %, -, _, etc) não podem ser inseridos neste campo
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Mensagem*</label>
-                                <textarea class="form-control f-mensagem" id="exampleFormControlTextarea1" rows="4"
-                                    placeholder="Digite a sua mensagem" required></textarea>
-                                <div class="alert alert-danger alert-mensagem" style="display:none;" role="alert">
-                                    Campo de mensagem vazio! Por favor, insira a sua mensagem
-                                </div>
-                            </div>
-                            <div class="retorno-contato">
-                                <span id="msg-retorno-contato">Retornaremos uma resposta no seu email.</span>
-                            </div>
-
-                            <!---Botões tela grande-->
-                            <div class="row justify-content-around bt-formulario-contato tela-g">
-                                <div>
-                                    <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
-                                </div>
-                            </div>
-
-                            <!---Botões tela media-->
-                            <div class="row justify-content-around bt-formulario-contato tela-m">
-                                <div>
-                                    <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
-                                </div>
-                            </div>
-
-                            <!---Botões tela pequena-->
-                            <div class="row justify-content-around bt-formulario-contato tela-p">
-                                <div>
-                                    <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
-                                </div>
-                            </div>
-
-                            <!---Botões tela pequena2-->
-                            <div class="row justify-content-around bt-formulario-contato tela-p2">
-                                <div>
-                                    <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-                <!--------FIM DO FORMULARIO DE CONTATO------->
-
-
-                <!----------INICIO FORMAS DE CONTATO--------->
-                <div class="col-md-1 col-sm-0 empty"></div>
-                <br><br><br><br>
-                <div class="col-md-5 col-sm-12 links-contato">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="titulo-central-atendimento alinha-texto">Central de atendimento</div>
-                            <div class="telefone-central pt-4 alinha-texto">
-                                <img class="img-phone-contato" src="../imagens/headphones-grey.svg">
-                                <span class="texto telefone">4002-8922</span>
-                            </div>
-                            <div class="texto pt-4 alinha-texto">Horários de atendimento</div>
-                            <div class="texto pt-3 alinha-texto">Seg. a Sex. das 08h às 20h - (exceto feriados)</div>
-                            <div class="email-contato pt-4 alinha-texto">
-                                <a class="link-email-atendimento" target="blank"
-                                    href="mailto:example@email.coml?subjetc=Email do site"><img class="img-email"
-                                        src="../imagens/email-svg-grey.svg"> example@email.com</a>
-                            </div>
-                        </div>
-                    </div>
+            <div id="div-faleConosco" class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img class="img-phone" src="../imagens/headphones.svg">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">(11)4002-8922</a>
+                    <a class="dropdown-item" href="#">example@email.com</a>
                 </div>
             </div>
+
+            <img class="img-phone textos" src="../imagens/headphones.svg">
+            <h3 id="faleConosco">Fale conosco</h3>
         </div>
-    </section>
+        <div class="ml-md-2 mt-md-0  textos">
+            <img class="img-icon-phone img-icon" src="../imagens/call.svg">
+            <h3 class="font-cab-phone textos">(11)4002-8922</h3>
+        </div>
+        <div class="ml-md-2 mt-md-0 textos">
+            <img class="img-icon-email" src="../imagens/email.svg">
+            <h3 class="font-cab-email">example@email.com</h3>
+        </div>
+        <div class="ml-md-auto mt-md-0">
+            <img class="img-icon-shield" src="../imagens/shield.png">
+            <h3 class="font-cab-shield">Site seguro</h3>
+        </div>
+    </div>
 
+    <!--cadastro-->
 
-    <!-------- INICIO FOOTER----------->
+    <div class="container mt-5">
+        <div class="row">
+            <form class="col-12">
+                <h4>Cliente, bem vindo!</h4>
+                <div class="row">
+                    <div class="form-group col-4">
+                        <label for="dataNascimento">Data de nascimento</label>
+                        <input type="date" class="form-control" id="dataNascimento">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="(--)____-____">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="celular">Celular</label>
+                        <input type="tel" class="form-control" id="celular" placeholder="(--)_____-____">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-3">
+                        <label for="cep">CEP:</label>
+                        <input type="number" class="form-control" id="cep">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="endereco">Endereço:</label>
+                        <input type="tex" class="form-control" id="endereco">
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" class="form-control" id="bairro">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="cidade">Cidade:</label>
+                        <input type="tex" class="form-control" id="cidade">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="estado">Estado:</label>
+                        <input type="text" class="form-control" id="estado">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-danger col-2">Limpar</button>
+                    <button type="button" class="btn btn-success col-6">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
     <footer class="page-footer font-small blue mt-5 pt-4 footer-container">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
@@ -395,7 +346,8 @@
             </div>
     </footer>
 
-    <!-------- FIM FOOTER ----------->
+
+    <!-- </div> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -405,8 +357,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-
-    <script src="../js/contato.js"></script>
 </body>
 
 
