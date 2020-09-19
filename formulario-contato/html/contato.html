@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/contato.css" rel="stylesheet">
+    
 </head>
 
 <body>
 
-    <!-------- INICIO HEADER ----------->
-    <div class="container tela-grande">
+     <!-------- INICIO HEADER ----------->
+     <div class="container tela-grande">
         <div class="d-flex justify-content-between mt-5">
-
+    
             <div class="borda-flex">
-
-                <img id="logo-img" src="../imagens/logo.png" type="img">
-
+    
+                <a id="topo" href="../../home/html/home_flex.html"><img id="logo-img" src="../imagens/logo.png"
+                        type="img"></a>
+    
             </div>
-
-
+    
+    
             <div id="barra-pesquisa" class="borda-flex-tamanho">
                 <div class="input-group mb-3 mt-5">
                     <input type="text" class="form-control tamanhoInput" placeholder="pesquise seu produto"
@@ -34,18 +37,19 @@
                     </div>
                 </div>
             </div>
-
-
+    
+    
             <div class="mt-5">
-
-                <button class="bt-header"><img class="img-icones" src="../imagens/conta.svg"><span
-                        class="fonte-forte">Conta</span></button>
-
+    
+                <a href="../../login/html/login.html"><button class="bt-header"><img class="img-icones"
+                            src="../imagens/conta.svg"><span class="fonte-forte">Conta</span></button></a>
+    
             </div>
             <div class="mt-5 ">
-
+    
                 <div class="div-carrinho">
-                    <button class="bt-header"><img class="img-icones" src="../imagens/carrinho.svg"></button>
+                    <a href="../../carrinho/html/carrinho.html"><button class="bt-header"><img class="img-icones"
+                                src="../imagens/carrinho.svg"></button></a>
                 </div>
                 <div class="div-quantidade">
                     0
@@ -54,7 +58,7 @@
                     <span class="fonte-carrinho-total fonte-forte">Total: R$&lt total &gt</span>
                 </div>
             </div>
-
+    
         </div>
         <div class="row">
             <div class="col-12">
@@ -64,22 +68,31 @@
                             <li id="departamentos" class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="navbar-toggler-icon fundo-ham"></span><span
+                                    <span class="navbar-toggler-icon fundo-ham" ></span><span
                                         id="categoria">Categorias</span>
                                 </a>
-
-
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item itens-menu-show" href="#">Ofertas do dia</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Novidades</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Descontos</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Contato</a>
-                                    <a class="dropdown-item " href="#">aqui os departamentos</a>
-
+    
+    
+                                <div class="dropdown-menu pt-0 pb-0 borda-none" aria-labelledby="navbardDropdownMenuLink">
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Ofertas</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Novidades</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Descontos</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria"
+                                        href="../../formulario-contato/html/contato.html">Contato</a>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../categorias-produtos/html/alimentos-basicos.html">Alimentos
+                                        básicos</a>
+                                    <a class="dropdown-item item-categoria" href="#">Higiene pessoal</a>
+                                    <a class="dropdown-item item-categoria" href="#">Limpeza</a>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../historico-compra/html/historico.html">Meus pedidos</a>
+    
                                 </div>
+    
+    
                             </li>
                             <li class="nav-item itens-menu">
-                                <a class="nav-link" href="#">Ofertas<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">Ofertas</a>
                             </li>
                             <li class="nav-item itens-menu">
                                 <a class="nav-link" href="#">Novidades</a>
@@ -88,9 +101,9 @@
                                 <a class="nav-link" href="#">Descontos</a>
                             </li>
                             <li class="nav-item itens-menu">
-                                <a class="nav-link" href="#">Contato</a>
+                                <a class="nav-link" href="../../formulario-contato/html/contato.html">Contato</a>
                             </li>
-
+    
                             <li style="display: none;" id="barra-pesquisa-responsiva" class="nav-item">
                                 <div class="input-group">
                                     <input type="text" class="form-control tamanhoInput"
@@ -102,22 +115,22 @@
                                                 src="../imagens/pesquisa.svg"></button>
                                     </div>
                                 </div>
-
-
+    
+    
                         </ul>
-
+    
                     </div>
                 </nav>
             </div>
         </div>
-
-
+    
+    
     </div>
     <div class="container tela-pequena">
         <div class="d-flex justify-content-between mt-5">
-
+    
             <div class="mt-2 cat">
-
+    
                 <nav class="navbar navbar-expand navbar-light">
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav menu">
@@ -127,40 +140,50 @@
                                     <span class="navbar-toggler-icon fundo-ham"></span>
                                     <span id="categoria">Categorias</span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item itens-menu-show" href="#">Conta</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Ofertas do dia</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Novidades</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Descontos</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Contato</a>
-                                    <a class="dropdown-item " href="#">aqui os departamentos</a>
-
+                                <div class="dropdown-menu pt-0 pb-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="../../login/html/login.html">Conta</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Ofertas</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Novidades</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Descontos</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria"
+                                        href="../../formulario-contato/html/contato.html">Contato</a>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../historico-compra/html/historico.html">Meus pedidos</a>
+                                    <span class="dropdown-item" style="color: #c81e21; font-weight: bold;"href="#">Departamentos</span>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../categorias-produtos/html/alimentos-basicos.html">Alimentos
+                                        básicos</a>
+                                    <a class="dropdown-item item-categoria" href="#">Higiene pessoal</a>
+                                    <a class="dropdown-item item-categoria" href="#">Limpeza</a>
+    
                                 </div>
                             </li>
                         </ul>
-
+    
                     </div>
                 </nav>
-
-
+    
+    
             </div>
-
+    
             <div class="borda-flex">
-
-                <img id="logo-img" src="../imagens/logo.png" type="img">
-
+    
+                <a id="topo" href="../../home/html/home_flex.html"><img id="logo-img" src="../imagens/logo.png"
+                    type="img"></a>
+    
             </div>
-
+    
             <div class="mt-4 carrinho-tela-pequena">
                 <div class="div-carrinho">
-                    <button class="bt-header"><img class="img-icones" src="../imagens/carrinho.svg"></button>
-                </div>
+                    <a href="../../carrinho/html/carrinho.html"><button class="bt-header"><img class="img-icones"
+                        src="../imagens/carrinho.svg"></button></a>
+        </div>
                 <div class="div-quantidade">
                     0
                 </div>
-
+    
             </div>
-
+    
         </div>
         <div class="row">
             <div class="col-12">
@@ -178,10 +201,11 @@
             </div>
         </div>
     </div>
-    </div>
-    <!-------- FIM HEADER ----------->
-
+    
+    
+    
     <hr>
+    <!-------- FIM HEADER -------->
 
     <!----------- INICIO BARRA VERMELHA ------------->
     <div id="barra-vermelha" class="d-flex flex-md-row justify-content-between">
@@ -199,86 +223,104 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="row justify-content-center formulario-contato">
-                        
-                            <form class="tamanho-form-contato">
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Nome Completo*</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Digite seu nome completo">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Email*</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="name@example.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Assunto*</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Digite o assunto do contato">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Mensagem*</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
-                                        placeholder="Digite a sua mensagem"></textarea>
-                                </div>
-                                <div class="retorno-contato">
-                                    <span id="msg-retorno-contato">Retornaremos uma resposta no seu email.</span>
-                                </div>
 
-                                <!---Botões tela grande-->
-                                <div class="row justify-content-around bt-formulario-contato tela-g">
-                                    <div>
-                                        <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
-                                    </div>
+                        <form class="tamanho-form-contato">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Nome Completo*</label>
+                                <input type="text" class="form-control f-nome-completo" id="exampleFormControlInput1"
+                                    placeholder="Digite seu nome completo" required>
+                                <div class="alert alert-danger alert-nome-completo" style="display:none;" role="alert">
+                                    Este campo deve conter pelo menos 5 caracteres
                                 </div>
+                                <div class="alert alert-danger alert-nomeComNumero" style="display:none;" role="alert">
+                                    Números ou caracteres especiais como (*, @, #, $, %, -, _, etc) não podem ser inseridos neste campo
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email*</label>
+                                <input type="email" class="form-control f-email" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" required>
+                                <div class="alert alert-danger alert-email" style="display:none;" role="alert">
+                                    Por favor, digite um email válido!
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Assunto*</label>
+                                <input type="text" class="form-control f-assunto" id="exampleFormControlInput1"
+                                    placeholder="Digite o assunto do contato" required>
+                                <div class="alert alert-danger alert-assunto" style="display:none;" role="alert">
+                                    Este campo deve conter pelo menos 10 caracteres
+                                </div>
+                                <div class="alert alert-danger alert-assuntoComNumero" style="display:none;" role="alert">
+                                    Números ou caracteres especiais como (*, @, #, $, %, -, _, etc) não podem ser inseridos neste campo
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Mensagem*</label>
+                                <textarea class="form-control f-mensagem" id="exampleFormControlTextarea1" rows="4"
+                                    placeholder="Digite a sua mensagem" required></textarea>
+                                <div class="alert alert-danger alert-mensagem" style="display:none;" role="alert">
+                                    Campo de mensagem vazio! Por favor, insira a sua mensagem
+                                </div>
+                            </div>
+                            <div class="retorno-contato">
+                                <span id="msg-retorno-contato">Retornaremos uma resposta no seu email.</span>
+                            </div>
 
-                                <!---Botões tela media-->
-                                <div class="row justify-content-around bt-formulario-contato tela-m">
-                                    <div>
-                                        <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
-                                    </div>
+                            <!---Botões tela grande-->
+                            <div class="row justify-content-around bt-formulario-contato tela-g">
+                                <div>
+                                    <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
                                 </div>
+                                <div>
+                                    <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
+                                </div>
+                            </div>
 
-                                 <!---Botões tela pequena-->
-                                 <div class="row justify-content-around bt-formulario-contato tela-p">
-                                    <div>
-                                        <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
-                                    </div>
+                            <!---Botões tela media-->
+                            <div class="row justify-content-around bt-formulario-contato tela-m">
+                                <div>
+                                    <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
                                 </div>
+                                <div>
+                                    <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
+                                </div>
+                            </div>
 
-                                 <!---Botões tela pequena2-->
-                                 <div class="row justify-content-around bt-formulario-contato tela-p2">
-                                    <div>
-                                        <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
-                                    </div>
+                            <!---Botões tela pequena-->
+                            <div class="row justify-content-around bt-formulario-contato tela-p">
+                                <div>
+                                    <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
                                 </div>
-                            </form>
+                                <div>
+                                    <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
+                                </div>
+                            </div>
+
+                            <!---Botões tela pequena2-->
+                            <div class="row justify-content-around bt-formulario-contato tela-p2">
+                                <div>
+                                    <button class="btn btn-primary bt-limpar" type="reset">Limpar</button>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary bt-enviar" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
 
                 <!--------FIM DO FORMULARIO DE CONTATO------->
 
-                
+
                 <!----------INICIO FORMAS DE CONTATO--------->
-               <div class="col-md-1 col-sm-0 empty"></div> 
-                    <br><br><br><br>
+                <div class="col-md-1 col-sm-0 empty"></div>
+                <br><br><br><br>
                 <div class="col-md-5 col-sm-12 links-contato">
                     <div class="row">
                         <div class="col-12">
-                            <div class="titulo-central-atendimento alinha-texto" >Central de atendimento</div>
+                            <div class="titulo-central-atendimento alinha-texto">Central de atendimento</div>
                             <div class="telefone-central pt-4 alinha-texto">
                                 <img class="img-phone-contato" src="../imagens/headphones-grey.svg">
                                 <span class="texto telefone">4002-8922</span>
@@ -286,8 +328,9 @@
                             <div class="texto pt-4 alinha-texto">Horários de atendimento</div>
                             <div class="texto pt-3 alinha-texto">Seg. a Sex. das 08h às 20h - (exceto feriados)</div>
                             <div class="email-contato pt-4 alinha-texto">
-                                <a class="link-email-atendimento" target="blank" href="mailto:example@email.coml?subjetc=Email do site"><img
-                                        class="img-email" src="../imagens/email-svg-grey.svg"> example@email.com</a>
+                                <a class="link-email-atendimento" target="blank"
+                                    href="mailto:example@email.coml?subjetc=Email do site"><img class="img-email"
+                                        src="../imagens/email-svg-grey.svg"> example@email.com</a>
                             </div>
                         </div>
                     </div>
@@ -297,86 +340,86 @@
     </section>
 
 
-    <!-------- INICIO FOOTER----------->
-    <footer class="page-footer font-small blue mt-5 pt-4 footer-container">
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <div class="col-md-3 col-xs-6 mb-md-0 mb-3 coluna-footer footer-textos">
-                    <h5 class="titulo-footer">Institucional</h5>
+  <!-------- INICIO FOOTER----------->
+  <footer class="page-footer font-small blue mt-5 pt-4 footer-container">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-3 col-xs-6 mb-md-0 mb-3 coluna-footer footer-textos">
+                <h5 class="titulo-footer">Institucional</h5>
 
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="link-footer" href="#!">Quem somos</a>
-                        </li>
-                        <li>
-                            <a class="link-footer" href="#!">Política de privacidade</a>
-                        </li>
-                        <li>
-                            <a class="link-footer" href="#!">Código de conduta</a>
-                        </li>
-                        <li>
-                            <a class="link-footer" href="#!">Sustentabilidade</a>
-                        </li>
-                        <li>
-                            <a class="link-footer" href="#!">Voltar ao topo</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer footer-textos">
-                    <h5 class="titulo-footer">Ajuda</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="link-footer" href="#!">F.A.Q-Privacidade de dados</a>
-                        </li>
-                        <li>
-                            <a class="link-footer" href="#!">Como pagar</a>
-                        </li>
-                        <li>
-                            <a class="link-footer" href="#!">Como retirar</a>
-                        </li>
-                        <li>
-                            <a class="link-footer" href="#!">Política de troca e devolução</a>
-                        </li>
-                        <li>
-                            <a class="link-footer" href="#!">F.A.Q</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer footer-textos">
-                    <h5 class="titulo-footer">Canal do Cliente</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="link-footer" href="#!">Fale conosco</a>
-                        </li>
-                        <li>
-                            <spap>4002-8922</span>
-                        </li>
-                        <li>
-                            <span>Horários de atendimento</span>
-                        </li>
-                        <li>
-                            <span>Seg. a Sex. das 8h às 20h - (exceto feriados)
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer">
-                    <h5 class="titulo-footer">Redes sociais</h5>
-                    <a target="blank" href="https://pt-br.facebook.com/"><img src="../imagens/logo-facebook.png"
-                            width="40px" height="40px"></a>
-                    <a target="blank" href="https://www.instagram.com/?hl=pt-br"><img
-                            src="../imagens/logo-instagram.png" width="40px" height="40px"></a>
-                    <a target="blank" href="https://twitter.com/login?lan=pt"><img src="../imagens/logo-twitter.png"
-                            width="40px" height="40px"></a>
-                </div>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="link-footer" href="#!">Quem somos</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#!">Política de privacidade</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#!">Código de conduta</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#!">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#topo">Voltar ao topo</a>
+                    </li>
+                </ul>
             </div>
-            <div class="footer-copyright text-center py-3 copiryght">
-                <span>© 2020 Todos os direitos reservados</span>
-            </div>
-    </footer>
+            <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer footer-textos">
+                <h5 class="titulo-footer">Ajuda</h5>
 
-    <!-------- FIM FOOTER ----------->
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="link-footer" href="#!">F.A.Q-Privacidade de dados</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#!">Como pagar</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#!">Como retirar</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#!">Política de troca e devolução</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#!">F.A.Q</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer footer-textos">
+                <h5 class="titulo-footer">Canal do Cliente</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="link-footer" href="#!">Fale conosco</a>
+                    </li>
+                    <li>
+                        <spap>4002-8922</span>
+                    </li>
+                    <li>
+                        <span>Horários de atendimento</span>
+                    </li>
+                    <li>
+                        <span>Seg. a Sex. das 8h às 20h - (exceto feriados)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer">
+                <h5 class="titulo-footer">Redes sociais</h5>
+                <a target="blank" href="https://pt-br.facebook.com/"><img src="../imagens/logo-facebook.png"
+                        width="40px" height="40px"></a>
+                <a target="blank" href="https://www.instagram.com/?hl=pt-br"><img
+                        src="../imagens/logo-instagram.png" width="40px" height="40px"></a>
+                <a target="blank" href="https://twitter.com/login?lan=pt"><img src="../imagens/logo-twitter.png"
+                        width="40px" height="40px"></a>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 copiryght">
+            <span>© 2020 Todos os direitos reservados</span>
+        </div>
+    </div>
+</footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -386,6 +429,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+    <script src="../js/contato.js"></script>
 </body>
 
 
