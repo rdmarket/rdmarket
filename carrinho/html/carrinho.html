@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/styles-barra-vermelha.css" rel="stylesheet">
+    <link href="../css/barra-progresso.css" rel="stylesheet">
+    <link href="../css/styles-carrinho.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="topo" class="container-fluid">
+
+        <div class="row justify-content-center mb-5">
+            <div id="img-centro" class="col-md-2 col-5 col-sm-3">
+                <a href="../../home/html/home_flex.html"><img src="../imagens/logo.png"></a>
+            </div>
+        </div>
+
+        <div class="row mb-1">
+            <div id="barra-cinza" class="col-12">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="barra-vermelha" class="d-flex flex-md-row justify-content-between align-items-center">
+        <div class="ml-md-4 mr-md-0 ml-sm-5 ml-5">
+
+            <div id="div-faleConosco" class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img class="img-phone" src="../imagens/headphones.svg">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">(11)4002-8922</a>
+                    <a class="dropdown-item" href="#">example@email.com</a>
+                </div>
+            </div>
+
+            <img class="img-phone textos" src="../imagens/headphones.svg">
+            <h3 id="faleConosco">Fale conosco</h3>
+        </div>
+        <div class="ml-md-2 mt-md-0  textos">
+            <img class="img-icon-phone img-icon" src="../imagens/call.svg">
+            <h3 class="font-cab-phone textos">(11)4002-8922</h3>
+        </div>
+        <div class="ml-md-2 mt-md-0 textos">
+            <img class="img-icon-email" src="../imagens/email.svg">
+            <h3 class="font-cab-email">example@email.com</h3>
+        </div>
+        <div class="ml-md-auto mt-md-0">
+            <img class="img-icon-shield" src="../imagens/shield.png">
+            <h3 class="font-cab-shield">Site seguro</h3>
+        </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center mt-3 mb-3">
+        <div>
+            <img id="img-progresso" src="../imagens/barra-de-progresso-1.png">
+        </div>
+    </div>
+    <!--Carrinho-->
+    <div class="conteiner d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-stretch" id="carrinho">
+            <ul style="width:100%;">
+                <li>
+                    <ul class="d-flex justify-content-around tamanho-carrinho">
+                        <li>
+                            <div id="imagem-carrinho"> 
+                                <img src="../imagens/feijao.png" alt="..."  class="img-thumbnail grande-img">
+                            </div>
+                        </li>
+                        <li><h1 class = "tamanho-titulo mt-4">Feijão Carioca Kicaldo - Tipo 1 Pacote 1 Kg</h1></li>
+                        <li class="preco mt-4">R$ 7,99</li>
+                        <ul class="qtde-item-carrinho d-flex">
+                            <li><button class = "btn-qtde menos mt-3">-</button></li>
+                            <li>
+                                <ul class="display-qtde text-center mt-1">
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
+                                </ul>
+                            </li>
+                            <li><button class = "btn-qtde mais mt-3">+</button></li>
+                        </ul>
+                        <li><button class = "btn-excluir mt-4"><img id="img-excluir" src="../imagens/lixo.png"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="d-flex justify-content-around tamanho-carrinho">
+                        <li>
+                            <div id="imagem-carrinho"> 
+                                <img src="../imagens/feijao.png" alt="..."  class="img-thumbnail grande-img">
+                            </div>
+                        </li>
+                        <li><h1 class = "tamanho-titulo mt-4">Feijão Carioca Kicaldo - Tipo 1 Pacote 1 Kg</h1></li>
+                        <li class="preco mt-4">R$ 7,99</li>
+                        <ul class="qtde-item-carrinho d-flex">
+                            <li><button class = "btn-qtde menos mt-3">-</button></li>
+                            <li>
+                                <ul class="display-qtde text-center mt-1">
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
+                                </ul>
+                            </li>
+                            <li><button class = "btn-qtde mais mt-3">+</button></li>
+                        </ul>
+                        <li><button class = "btn-excluir mt-4"><img id="img-excluir" src="../imagens/lixo.png"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="d-flex justify-content-around tamanho-carrinho">
+                        <li>
+                            <div id="imagem-carrinho"> 
+                                <img src="../imagens/feijao.png" alt="..."  class="img-thumbnail grande-img">
+                            </div>
+                        </li>
+                        <li><h1 class = "tamanho-titulo mt-4">Feijão Carioca Kicaldo - Tipo 1 Pacote 1 Kg</h1></li>
+                        <li class="preco mt-4">R$ 7,99</li>
+                        <ul class="qtde-item-carrinho d-flex">
+                            <li><button class = "btn-qtde menos mt-3">-</button></li>
+                            <li>
+                                <ul class="display-qtde text-center mt-1">
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
+                                </ul>
+                            </li>
+                            <li><button class = "btn-qtde mais mt-3">+</button></li>
+                        </ul>
+                        <li><button class = "btn-excluir mt-4"><img id="img-excluir" src="../imagens/lixo.png"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="d-flex justify-content-around tamanho-carrinho">
+                        <li>
+                            <div id="imagem-carrinho"> 
+                                <img src="../imagens/feijao.png" alt="..."  class="img-thumbnail grande-img">
+                            </div>
+                        </li>
+                        <li><h1 class = "tamanho-titulo mt-4">Feijão Carioca Kicaldo - Tipo 1 Pacote 1 Kg</h1></li>
+                        <li class="preco mt-4">R$ 7,99</li>
+                        <ul class="qtde-item-carrinho d-flex">
+                            <li><button class = "btn-qtde menos mt-3">-</button></li>
+                            <li>
+                                <ul class="display-qtde text-center mt-1">
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
+                                </ul>
+                            </li>
+                            <li><button class = "btn-qtde mais mt-3">+</button></li>
+                        </ul>
+                        <li><button class = "btn-excluir mt-4"><img id="img-excluir" src="../imagens/lixo.png"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="d-flex justify-content-around tamanho-carrinho">
+                        <li>
+                            <div id="imagem-carrinho"> 
+                                <img src="../imagens/feijao.png" alt="..."  class="img-thumbnail grande-img">
+                            </div>
+                        </li>
+                        <li><h1 class = "tamanho-titulo mt-4">Feijão Carioca Kicaldo - Tipo 1 Pacote 1 Kg</h1></li>
+                        <li class="preco mt-4">R$ 7,99</li>
+                        <ul class="qtde-item-carrinho d-flex">
+                            <li><button class = "btn-qtde menos mt-3">-</button></li>
+                            <li>
+                                <ul class="display-qtde text-center mt-1">
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
+                                </ul>
+                            </li>
+                            <li><button class = "btn-qtde mais mt-3">+</button></li>
+                        </ul>
+                        <li><button class = "btn-excluir mt-4"><img id="img-excluir" src="../imagens/lixo.png"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="d-flex justify-content-around tamanho-carrinho">
+                        <li>
+                            <div id="imagem-carrinho"> 
+                                <img src="../imagens/feijao.png" alt="..."  class="img-thumbnail grande-img">
+                            </div>
+                        </li>
+                        <li><h1 class = "tamanho-titulo mt-4">Feijão Carioca Kicaldo - Tipo 1 Pacote 1 Kg</h1></li>
+                        <li class="preco mt-4">R$ 7,99</li>
+                        <ul class="qtde-item-carrinho d-flex">
+                            <li><button class = "btn-qtde menos mt-3">-</button></li>
+                            <li>
+                                <ul class="display-qtde text-center mt-1">
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
+                                </ul>
+                            </li>
+                            <li><button class = "btn-qtde mais mt-3">+</button></li>
+                        </ul>
+                        <li><button class = "btn-excluir mt-4"><img id="img-excluir" src="../imagens/lixo.png"></button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="d-flex justify-content-around tamanho-carrinho">
+                        <li>
+                            <div id="imagem-carrinho"> 
+                                <img src="../imagens/feijao.png" alt="..."  class="img-thumbnail grande-img">
+                            </div>
+                        </li>
+                        <li><h1 class = "tamanho-titulo mt-4">Feijão Carioca Kicaldo - Tipo 1 Pacote 1 Kg</h1></li>
+                        <li class="preco mt-4">R$ 7,99</li>
+                        <ul class="qtde-item-carrinho d-flex">
+                            <li><button class = "btn-qtde menos mt-3">-</button></li>
+                            <li>
+                                <ul class="display-qtde text-center mt-1">
+                                    <li class="qtde-item" id="descricao-qtde">Qtd:</li>
+                                    <li class="qtde-item" id="qtde">1</li>
+                                </ul>
+                            </li>
+                            <li><button class = "btn-qtde mais mt-3">+</button></li>
+                        </ul>
+                        <li><button class = "btn-excluir mt-4"><img id="img-excluir" src="../imagens/lixo.png"></button></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <hr>
+    <div class="row mr-5">
+        <div class="finalizar w-100">
+            <ul class="modo-coluna">
+                <li>
+                    <div class="total">
+                        <h2 id = "valor">Total: R$ 100,00<h2>
+                    </div>
+                </li>
+                <li>
+                    <div class="div-btn-comprar mt-3">
+                        <a href="../../checkout/html/checkout-pagamento.html">
+                            <button class = "btn-comprar">Finalizar a compra</button>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        
+    <!-- <div class="container-fluid tamanho-container-footer"> -->
+    <footer class="page-footer font-small blue mt-5 pt-4 footer-container">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 mb-md-0 mb-3 coluna-footer footer-textos">
+                    <h5 class="titulo-footer">Institucional</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="link-footer" href="#!">Quem somos</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="#!">Política de privacidade</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="#!">Código de conduta</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="#!">Sustentabilidade</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="#topo">Voltar ao topo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer footer-textos">
+                    <h5 class="titulo-footer">Ajuda</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="link-footer" href="#!">F.A.Q-Privacidade de dados</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="#!">Como pagar</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="#!">Como retirar</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="#!">Política de troca e devolução</a>
+                        </li>
+                        <li>
+                            <a class="link-footer" href="#!">F.A.Q</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer footer-textos">
+                    <h5 class="titulo-footer">Canal do Cliente</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="link-footer" href="#!">Fale conosco</a>
+                        </li>
+                        <li>
+                            <spap>4002-8922</span>
+                        </li>
+                        <li>
+                            <span>Horários de atendimento</span>
+                        </li>
+                        <li>
+                            <span>Seg. a Sex. das 8h às 20h - (exceto feriados)
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer">
+                    <h5 class="titulo-footer">Redes sociais</h5>
+                    <a target="blank" href="https://pt-br.facebook.com/"><img src="../imagens/logo-facebook.png"
+                            width="40px" height="40px"></a>
+                    <a target="blank" href="https://www.instagram.com/?hl=pt-br"><img
+                            src="../imagens/logo-instagram.png" width="40px" height="40px"></a>
+                    <a target="blank" href="https://twitter.com/login?lan=pt"><img src="../imagens/logo-twitter.png"
+                            width="40px" height="40px"></a>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3 copiryght">
+                <span>© 2020 Todos os direitos reservados</span>
+            </div>
+    </footer>
+
+
+    <!-- </div> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
