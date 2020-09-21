@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco</title>
+    <link rel="icon" href="../imagens/favicon.png">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/contato.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+
     
 </head>
 
 <body>
 
-     <!-------- INICIO HEADER ----------->
-     <div class="container tela-grande">
+    
+    <!-------- INICIO HEADER ----------->
+    <div class="container tela-grande">
         <div class="d-flex justify-content-between mt-5">
-    
+
             <div class="borda-flex">
-    
+
                 <a id="topo" href="../../home/html/home_flex.html"><img id="logo-img" src="../imagens/logo.png"
                         type="img"></a>
-    
+
             </div>
-    
-    
+
+
             <div id="barra-pesquisa" class="borda-flex-tamanho">
                 <div class="input-group mb-3 mt-5">
                     <input type="text" class="form-control tamanhoInput" placeholder="pesquise seu produto"
@@ -37,19 +41,32 @@
                     </div>
                 </div>
             </div>
-    
-    
-            <div class="mt-5">
-    
+
+
+            <!-- <div class="mt-5">
+
                 <a href="../../login/html/login.html"><button class="bt-header"><img class="img-icones"
                             src="../imagens/conta.svg"><span class="fonte-forte">Conta</span></button></a>
-    
+
+            </div> -->
+
+            <div class="dropdown show align-self-center">
+                <a class="dropdown-conta dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="img-icones" src="../imagens/conta.svg">
+                    <span class="fonte-forte">Conta</span>
+                </a>
+              
+                <div class="dropdown-menu background-conta-item pt-0 pb-0" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item conta-item" style="display: none;" href="../../login/html/login.html">Login/cadastro</a>
+                  <a class="dropdown-item conta-item" href="../../historico-compra/html/historico.html">Meus pedidos</a>
+                  <a class="dropdown-item conta-item" style="display: block;" href="#" >Sair</a>
+                </div>
             </div>
-            <div class="mt-5 ">
-    
+
+            <div class="mt-5">
+
                 <div class="div-carrinho">
-                    <a href="../../carrinho/html/carrinho.html"><button class="bt-header"><img class="img-icones"
-                                src="../imagens/carrinho.svg"></button></a>
+                    <a href="../../carrinho/html/carrinho.html"><img class="img-icones" src="../imagens/carrinho.svg"></a>
                 </div>
                 <div class="div-quantidade">
                     0
@@ -58,7 +75,7 @@
                     <span class="fonte-carrinho-total fonte-forte">Total: R$&lt total &gt</span>
                 </div>
             </div>
-    
+
         </div>
         <div class="row">
             <div class="col-12">
@@ -71,8 +88,8 @@
                                     <span class="navbar-toggler-icon fundo-ham" ></span><span
                                         id="categoria">Categorias</span>
                                 </a>
-    
-    
+
+
                                 <div class="dropdown-menu pt-0 pb-0 borda-none" aria-labelledby="navbardDropdownMenuLink">
                                     <a class="dropdown-item itens-menu-show item-categoria" href="#">Ofertas</a>
                                     <a class="dropdown-item itens-menu-show item-categoria" href="#">Novidades</a>
@@ -84,12 +101,9 @@
                                         básicos</a>
                                     <a class="dropdown-item item-categoria" href="#">Higiene pessoal</a>
                                     <a class="dropdown-item item-categoria" href="#">Limpeza</a>
-                                    <a class="dropdown-item item-categoria"
-                                        href="../../historico-compra/html/historico.html">Meus pedidos</a>
-    
                                 </div>
-    
-    
+
+
                             </li>
                             <li class="nav-item itens-menu">
                                 <a class="nav-link" href="#">Ofertas</a>
@@ -103,7 +117,7 @@
                             <li class="nav-item itens-menu">
                                 <a class="nav-link" href="../../formulario-contato/html/contato.html">Contato</a>
                             </li>
-    
+
                             <li style="display: none;" id="barra-pesquisa-responsiva" class="nav-item">
                                 <div class="input-group">
                                     <input type="text" class="form-control tamanhoInput"
@@ -115,22 +129,22 @@
                                                 src="../imagens/pesquisa.svg"></button>
                                     </div>
                                 </div>
-    
-    
+
+
                         </ul>
-    
+
                     </div>
                 </nav>
             </div>
         </div>
-    
-    
+
+
     </div>
     <div class="container tela-pequena">
         <div class="d-flex justify-content-between mt-5">
-    
+
             <div class="mt-2 cat">
-    
+
                 <nav class="navbar navbar-expand navbar-light">
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav menu">
@@ -147,32 +161,30 @@
                                     <a class="dropdown-item itens-menu-show item-categoria" href="#">Descontos</a>
                                     <a class="dropdown-item itens-menu-show item-categoria"
                                         href="../../formulario-contato/html/contato.html">Contato</a>
-                                    <a class="dropdown-item item-categoria"
-                                        href="../../historico-compra/html/historico.html">Meus pedidos</a>
                                     <span class="dropdown-item" style="color: #c81e21; font-weight: bold;"href="#">Departamentos</span>
                                     <a class="dropdown-item item-categoria"
                                         href="../../categorias-produtos/html/alimentos-basicos.html">Alimentos
                                         básicos</a>
                                     <a class="dropdown-item item-categoria" href="#">Higiene pessoal</a>
                                     <a class="dropdown-item item-categoria" href="#">Limpeza</a>
-    
+
                                 </div>
                             </li>
                         </ul>
-    
+
                     </div>
                 </nav>
-    
-    
+
+
             </div>
-    
+
             <div class="borda-flex">
-    
+
                 <a id="topo" href="../../home/html/home_flex.html"><img id="logo-img" src="../imagens/logo.png"
                     type="img"></a>
-    
+
             </div>
-    
+
             <div class="mt-4 carrinho-tela-pequena">
                 <div class="div-carrinho">
                     <a href="../../carrinho/html/carrinho.html"><button class="bt-header"><img class="img-icones"
@@ -181,9 +193,9 @@
                 <div class="div-quantidade">
                     0
                 </div>
-    
+
             </div>
-    
+
         </div>
         <div class="row">
             <div class="col-12">
@@ -201,12 +213,11 @@
             </div>
         </div>
     </div>
-    
-    
-    
-    <hr>
-    <!-------- FIM HEADER -------->
 
+
+
+    <hr>
+    <!-------- FIM HEADER ----------->
     <!----------- INICIO BARRA VERMELHA ------------->
     <div id="barra-vermelha" class="d-flex flex-md-row justify-content-between">
         <div class="ml-md-5 mr-md-0 ml-sm-4">
