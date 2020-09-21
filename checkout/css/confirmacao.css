@@ -1,5 +1,5 @@
 #confirmacao_sucesso{
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: rgba(200, 200, 200, 0.8);
     height: 100%;
     position: fixed;
     width: 100%;
@@ -9,16 +9,26 @@
     display: none;   
 }
 #img_xis{
-    left: 85%;
+    left: 60%;
     position: relative;
-    width: 5%;
-    top: 0px;
+    width: 3%;
+    top: 50px;
     z-index: 10;
 }
 #img_sucesso{
     position: relative;
     left: 35%;
-    width: 30%;
+    width: 15%;
     top: 100px;
+}
+#msg-texto{
+    color: white;
+    z-index: 10;
+    position: relative;
+    font-weight: 700;
+    left: 28%;
+    font-size: 3vw;
+    top: 120px;
+
 }
 
