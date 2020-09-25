@@ -7,47 +7,49 @@
     <title>RD Market</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="./styles/styles-cat-alimentos.css" rel="stylesheet">
-    <link href="./styles/styles-media-queries.css" rel="stylesheet">
-    <link href="./styles/styles copy.css" rel="stylesheet">
-    <link href="./styles/styles-item-detalhado.css" rel="stylesheet">
-    <link href="./styles/styles-filtro.css" rel="stylesheet">
+    <link href="../css/styles-cat-alimentos.css" rel="stylesheet">
+    <link href="../css/styles-media-queries.css" rel="stylesheet">
+    <link href="../css/styles-item-detalhado.css" rel="stylesheet">
+    <link href="../css/styles-filtro.css" rel="stylesheet">
+    <link href="../css/styles copy.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-------- INICIO HEADER ----------->
-    <div class="container tela-grande">
+      <!-------- INICIO HEADER ----------->
+      <div class="container tela-grande">
         <div class="d-flex justify-content-between mt-5">
-
+    
             <div class="borda-flex">
-
-                <a href="../Home/home_flex.html"><img id="logo-img" src="./imagens/logo.png" type="img"></a>
-
+    
+                <a id="topo" href="../../home/html/home_flex.html"><img id="logo-img" src="../imagens/logo.png"
+                        type="img"></a>
+    
             </div>
-
-
+    
+    
             <div id="barra-pesquisa" class="borda-flex-tamanho">
                 <div class="input-group mb-3 mt-5">
                     <input type="text" class="form-control tamanhoInput" placeholder="pesquise seu produto"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
                     <div class="input-group-append">
                         <button class="btn btn-outline-secondary bt-header-pesquisa" type="button"
-                            id="button-addon2"><img width="20px" height="20px" src="./imagens/pesquisa.svg"></button>
+                            id="button-addon2"><img width="20px" height="20px" src="../imagens/pesquisa.svg"></button>
                     </div>
                 </div>
             </div>
-
-
+    
+    
             <div class="mt-5">
-
-                <button class="bt-header"><img class="img-icones" src="./imagens/conta.svg"><span
-                        class="fonte-forte">Conta</span></button>
-
+    
+                <a href="../../login/html/login.html"><button class="bt-header"><img class="img-icones"
+                            src="../imagens/conta.svg"><span class="fonte-forte">Conta</span></button></a>
+    
             </div>
             <div class="mt-5 ">
-
+    
                 <div class="div-carrinho">
-                    <button class="bt-header"><img class="img-icones" src="./imagens/carrinho.svg"></button>
+                    <a href="../../carrinho/html/carrinho.html"><button class="bt-header"><img class="img-icones"
+                                src="../imagens/carrinho.svg"></button></a>
                 </div>
                 <div class="div-quantidade">
                     0
@@ -56,7 +58,7 @@
                     <span class="fonte-carrinho-total fonte-forte">Total: R$&lt total &gt</span>
                 </div>
             </div>
-
+    
         </div>
         <div class="row">
             <div class="col-12">
@@ -66,19 +68,31 @@
                             <li id="departamentos" class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="navbar-toggler-icon fundo-ham"></span><span
+                                    <span class="navbar-toggler-icon fundo-ham" ></span><span
                                         id="categoria">Categorias</span>
                                 </a>
-
-                                <div class="dropdown-menu drop" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item " href="">Alimentos básicos</a>
-                                    <a class="dropdown-item " href="#">Higiene pessoal</a>
-                                    <a class="dropdown-item " href="#">Limpeza</a>
-
+    
+    
+                                <div class="dropdown-menu pt-0 pb-0 borda-none" aria-labelledby="navbardDropdownMenuLink">
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Ofertas</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Novidades</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Descontos</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria"
+                                        href="../../formulario-contato/html/contato.html">Contato</a>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../categorias-produtos/html/alimentos-basicos.html">Alimentos
+                                        básicos</a>
+                                    <a class="dropdown-item item-categoria" href="#">Higiene pessoal</a>
+                                    <a class="dropdown-item item-categoria" href="#">Limpeza</a>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../historico-compra/html/historico.html">Meus pedidos</a>
+    
                                 </div>
+    
+    
                             </li>
                             <li class="nav-item itens-menu">
-                                <a class="nav-link" href="#">Ofertas<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">Ofertas</a>
                             </li>
                             <li class="nav-item itens-menu">
                                 <a class="nav-link" href="#">Novidades</a>
@@ -87,9 +101,9 @@
                                 <a class="nav-link" href="#">Descontos</a>
                             </li>
                             <li class="nav-item itens-menu">
-                                <a class="nav-link" href="#">Contato</a>
+                                <a class="nav-link" href="../../formulario-contato/html/contato.html">Contato</a>
                             </li>
-
+    
                             <li style="display: none;" id="barra-pesquisa-responsiva" class="nav-item">
                                 <div class="input-group">
                                     <input type="text" class="form-control tamanhoInput"
@@ -98,25 +112,25 @@
                                     <div class="input-group-append">
                                         <button class="btn btn-outline-secondary bt-header-pesquisa" type="button"
                                             id="button-addon2"><img width="20px" height="20px"
-                                                src="./imagens/pesquisa.svg"></button>
+                                                src="../imagens/pesquisa.svg"></button>
                                     </div>
                                 </div>
-
-
+    
+    
                         </ul>
-
+    
                     </div>
                 </nav>
             </div>
         </div>
-
-
+    
+    
     </div>
     <div class="container tela-pequena">
         <div class="d-flex justify-content-between mt-5">
-
+    
             <div class="mt-2 cat">
-
+    
                 <nav class="navbar navbar-expand navbar-light">
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav menu">
@@ -126,40 +140,50 @@
                                     <span class="navbar-toggler-icon fundo-ham"></span>
                                     <span id="categoria">Categorias</span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item itens-menu-show" href="#">Conta</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Ofertas do dia</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Novidades</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Descontos</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Contato</a>
-                                    <a class="dropdown-item " href="#">aqui os departamentos</a>
-
+                                <div class="dropdown-menu pt-0 pb-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="../../login/html/login.html">Conta</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Ofertas</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Novidades</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Descontos</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria"
+                                        href="../../formulario-contato/html/contato.html">Contato</a>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../historico-compra/html/historico.html">Meus pedidos</a>
+                                    <span class="dropdown-item" style="color: #c81e21; font-weight: bold;"href="#">Departamentos</span>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../categorias-produtos/html/alimentos-basicos.html">Alimentos
+                                        básicos</a>
+                                    <a class="dropdown-item item-categoria" href="#">Higiene pessoal</a>
+                                    <a class="dropdown-item item-categoria" href="#">Limpeza</a>
+    
                                 </div>
                             </li>
                         </ul>
-
+    
                     </div>
                 </nav>
-
-
+    
+    
             </div>
-
+    
             <div class="borda-flex">
-
-                <img id="logo-img" src="./imagens/logo.png" type="img">
-
+    
+                <a id="topo" href="../../home/html/home_flex.html"><img id="logo-img" src="../imagens/logo.png"
+                    type="img"></a>
+    
             </div>
-
+    
             <div class="mt-4 carrinho-tela-pequena">
                 <div class="div-carrinho">
-                    <button class="bt-header"><img class="img-icones" src="./imagens/carrinho.svg"></button>
-                </div>
+                    <a href="../../carrinho/html/carrinho.html"><button class="bt-header"><img class="img-icones"
+                        src="../imagens/carrinho.svg"></button></a>
+        </div>
                 <div class="div-quantidade">
                     0
                 </div>
-
+    
             </div>
-
+    
         </div>
         <div class="row">
             <div class="col-12">
@@ -170,14 +194,16 @@
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary bt-header-pesquisa" type="button"
                                 id="button-addon2"><img width="20px" height="20px"
-                                    src="./imagens/pesquisa.svg"></button>
+                                    src="../imagens/pesquisa.svg"></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    
+    
+    
     <hr>
     <!-------- FIM HEADER ----------->
     <article class="page-item">
@@ -185,10 +211,10 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav diretorio ml-5">
                     <li class="nav-item active item-barra-vermelha">
-                        <a class="nav-link texto-branco" href="../Home/home_flex.html">Home ></a>
+                        <a class="nav-link texto-branco" href="../../home/html/home_flex.html"><spam class="text-white"> Home ></spam></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link texto-branco item-barra-vermelha" href="../categorias-produtos/alimentos-basicos.html">Alimentos básicos ></a>
+                        <a class="nav-link texto-branco item-barra-vermelha" href="alimentos-basicos.html"><spam class="text-white">Alimentos básicos ></spam></a>
                     </li>
                 </ul>
             </div>
@@ -214,11 +240,11 @@
                 </div>
             </article>
             <article class="item article1">
-                <a href="../itens/paginas/item-detalhado.html">
-                    <img src="./imagens/arroz_ajustado.jpg" height="110px" />
+                <a href="../../detalhe-produto/html/item-detalhado.html">
+                    <img src="../imagens/arroz_ajustado.jpg" height="110px" />
                 </a>
                 <div class="descricao-produto">
-                    <a href="../itens/paginas/item-detalhado.html">
+                    <a href="../../detalhe-produto/html/item-detalhado.html">
                         <p>Arroz Tipo 1 CAMIL Pacote 5kg</p>
                     </a>
                 </div>
@@ -226,19 +252,19 @@
                     <h5>R$22,99</h5>
                 </div>
                 <div class="container-dos-botoes">
-                    <button type="button" class="botao">-</button>
-                    <button type="button" class="botao">0</button>
-                    <button type="button" class="botao">+</button>
-                    <input id="cart" type="image" src="./imagens/cart.png">
+                    <input type="button" class="menos" value="-">
+                    <input type="button" class="quant" value="0">
+                    <input type="button" class="mais" value="+">
+                    <input id="cart" type="image" src="../imagens/cart.png">
                 </div>
             </article>
             <!-- --------- -->
             <article class="item article2">
-                <a href="../itens/paginas/item-detalhado.html">
-                    <img src="./imagens/arroz_ajustado.jpg" height="110px" />
+                <a href="../../detalhe-produto/html/item-detalhado.html">
+                    <img src="../imagens/arroz_ajustado.jpg" height="110px" />
                 </a>
                 <div class="descricao-produto">
-                    <a href="../itens/paginas/item-detalhado.html">
+                    <a href="../../detalhe-produto/html/item-detalhado.html">
                         <p>Arroz Tipo 1 CAMIL Pacote 5kg</p>
                     </a>
                 </div>
@@ -246,19 +272,19 @@
                     <h5>R$22,99</h5>
                 </div>
                 <div class="container-dos-botoes">
-                    <button type="button" class="botao">-</button>
-                    <button type="button" class="botao">0</button>
-                    <button type="button" class="botao">+</button>
-                    <input id="cart" type="image" src="./imagens/cart.png">
+                    <input type="button" class="menos" value="-">
+                    <input type="button" class="quant" value="0">
+                    <input type="button" class="mais" value="+">
+                    <input id="cart" type="image" src="../imagens/cart.png">
                 </div>
             </article>
             <!-- --------- -->
             <article class="item article3">
-                <a href="../itens/paginas/item-detalhado.html">
-                    <img src="./imagens/arroz_ajustado.jpg" height="110px" />
+                <a href="../../detalhe-produto/html/item-detalhado.html">
+                    <img src="../imagens/arroz_ajustado.jpg" height="110px" />
                 </a>
                 <div class="descricao-produto">
-                    <a href="../itens/paginas/item-detalhado.html">
+                    <a href="../../detalhe-produto/html/item-detalhado.html">
                         <p>Arroz Tipo 1 CAMIL Pacote 5kg</p>
                     </a>
                 </div>
@@ -266,19 +292,19 @@
                     <h5>R$22,99</h5>
                 </div>
                 <div class="container-dos-botoes">
-                    <button type="button" class="botao">-</button>
-                    <button type="button" class="botao">0</button>
-                    <button type="button" class="botao">+</button>
-                    <input id="cart" type="image" src="./imagens/cart.png">
+                    <input type="button" class="menos" value="-">
+                    <input type="button" class="quant" value="0">
+                    <input type="button" class="mais" value="+">
+                    <input id="cart" type="image" src="../imagens/cart.png">
                 </div>
             </article>
             <!-- --------- -->
             <article class="item article4">
-                <a href="../itens/paginas/item-detalhado.html">
-                    <img src="./imagens/arroz_ajustado.jpg" height="110px" />
+                <a href="../../detalhe-produto/html/item-detalhado.html">
+                    <img src="../imagens/arroz_ajustado.jpg" height="110px" />
                 </a>
                 <div class="descricao-produto">
-                    <a href="../itens/paginas/item-detalhado.html">
+                    <a href="../../detalhe-produto/html/item-detalhado.html">
                         <p>Arroz Tipo 1 CAMIL Pacote 5kg</p>
                     </a>
                 </div>
@@ -286,19 +312,19 @@
                     <h5>R$22,99</h5>
                 </div>
                 <div class="container-dos-botoes">
-                    <button type="button" class="botao">-</button>
-                    <button type="button" class="botao">0</button>
-                    <button type="button" class="botao">+</button>
-                    <input id="cart" type="image" src="./imagens/cart.png">
+                    <input type="button" class="menos" value="-">
+                    <input type="button" class="quant" value="0">
+                    <input type="button" class="mais" value="+">
+                    <input id="cart" type="image" src="../imagens/cart.png">
                 </div>
             </article>
             <!-- --------- -->
             <article class="item article5">
-                <a href="../itens/paginas/item-detalhado.html">
-                    <img src="./imagens/arroz_ajustado.jpg" height="110px" />
+                <a href="../../detalhe-produto/html/item-detalhado.html">
+                    <img src="../imagens/arroz_ajustado.jpg" height="110px" />
                 </a>
                 <div class="descricao-produto">
-                    <a href="../itens/paginas/item-detalhado.html">
+                    <a href="../../detalhe-produto/html/item-detalhado.html">
                         <p>Arroz Tipo 1 CAMIL Pacote 5kg</p>
                     </a>
                 </div>
@@ -306,19 +332,19 @@
                     <h5>R$22,99</h5>
                 </div>
                 <div class="container-dos-botoes">
-                    <button type="button" class="botao">-</button>
-                    <button type="button" class="botao">0</button>
-                    <button type="button" class="botao">+</button>
-                    <input id="cart" type="image" src="./imagens/cart.png">
+                    <input type="button" class="menos" value="-">
+                    <input type="button" class="quant" value="0">
+                    <input type="button" class="mais" value="+">
+                    <input id="cart" type="image" src="../imagens/cart.png">
                 </div>
             </article>
             <!-- --------- -->
             <article class="item article6">
-                <a href="../itens/paginas/item-detalhado.html">
-                    <img src="./imagens/arroz_ajustado.jpg" height="110px" />
+                <a href="../../detalhe-produto/html/item-detalhado.html">
+                    <img src="../imagens/arroz_ajustado.jpg" height="110px" />
                 </a>
                 <div class="descricao-produto">
-                    <a href="../itens/paginas/item-detalhado.html">
+                    <a href="../../detalhe-produto/html/item-detalhado.html">
                         <p>Arroz Tipo 1 CAMIL Pacote 5kg</p>
                     </a>
                 </div>
@@ -326,10 +352,10 @@
                     <h5>R$22,99</h5>
                 </div>
                 <div class="container-dos-botoes">
-                    <button type="button" class="botao">-</button>
-                    <button type="button" class="botao">0</button>
-                    <button type="button" class="botao">+</button>
-                    <input id="cart" type="image" src="./imagens/cart.png">
+                    <input type="button" class="menos" value="-">
+                    <input type="button" class="quant" value="0">
+                    <input type="button" class="mais" value="+">
+                    <input id="cart" type="image" src="../imagens/cart.png">
                 </div>
             </article>
         </section>
@@ -354,7 +380,7 @@
                                 <a class="link-footer" href="#!">Sustentabilidade</a>
                             </li>
                             <li>
-                                <a class="link-footer" href="#!">Voltar ao topo</a>
+                                <a class="link-footer" href="#topo">Voltar ao topo</a>
                             </li>
                         </ul>
                     </div>
@@ -399,11 +425,11 @@
                     </div>
                     <div class="col-md-3 mb-md-0 col-xs-6 mb-3 coluna-footer">
                         <h5 class="titulo-footer">Redes sociais</h5>
-                        <a target="blank" href="https://pt-br.facebook.com/"><img src="./imagens/logo-facebook.png"
+                        <a target="blank" href="https://pt-br.facebook.com/"><img src="../imagens/logo-facebook.png"
                                 width="40px" height="40px"></a>
                         <a target="blank" href="https://www.instagram.com/?hl=pt-br"><img
-                                src="./imagens/logo-instagram.png" width="40px" height="40px"></a>
-                        <a target="blank" href="https://twitter.com/login?lan=pt"><img src="./imagens/logo-twitter.png"
+                                src="../imagens/logo-instagram.png" width="40px" height="40px"></a>
+                        <a target="blank" href="https://twitter.com/login?lan=pt"><img src="../imagens/logo-twitter.png"
                                 width="40px" height="40px"></a>
                     </div>
                 </div>
@@ -422,6 +448,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
+            <script src="../JS/botao-quantidade.js"></script>
 </body>
 
 </html>
