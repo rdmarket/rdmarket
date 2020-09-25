@@ -3,6 +3,10 @@
     display: flex;
     flex-flow: row wrap;
 }
+.text-white{
+    color: white !important;
+    font-weight: bold;
+}
 .item{
     background-color:rgb(230, 230, 238);
     width: 100%;
@@ -20,7 +24,7 @@
     background-color: #77D353;
     color: white;
 }
-.botao{
+.menos, .quant, .mais{
     display: flex;
     justify-content: center;
     align-items: center;
