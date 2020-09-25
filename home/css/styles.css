@@ -1,0 +1,102 @@
+/* Lista de produtos */
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.all{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.text{
+    text-align: center;
+}
+.imagem{
+    text-align: center;
+}
+
+/* Css Botoes */
+#iconesBotao{
+    background-color: #77D353;
+    border-radius: 5px;
+}
+.containerBotoes{
+    display: flex;
+    width: 180px;
+}
+.menos, .mais{
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    color: #47525E;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 5px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    border: transparent;
+}
+.menos:hover{
+    background-color: #77D353;
+    color: white;
+}
+.mais:hover{
+    background-color: #77D353;
+    color: white;
+}
+.quant{
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #77D353;
+    color: #47525E;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 5px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: text;
+}
+.quant:hover{
+    background-color: #77D353;
+    color: white;
+}
+#cart-button{
+    border-radius: 5px;
+    padding: 0px 0px 0px 0px;
+    margin-left: 2px;
+    width: 33px;
+}
+/* Fim Css botoes */
+
+/* Media Queries */
+@media(max-width:900px){
+    .item5, .item10{
+        display: none;
+    }
+    .item15, .item20{
+        display: none;
+    }
+}
+@media(max-width:767px){
+    .item4, .item8{
+        display: none;
+    }
+    .item12, .item16{
+        display: none;
+    }
+}
+@media(max-width:520px){
+    .item3, .item6 {
+        display: none;
+    }
+    .item14, .item19{
+        display: none;
+    }
+
+}
