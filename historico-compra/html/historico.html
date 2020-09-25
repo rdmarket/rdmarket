@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus pedidos</title>
+    <link rel="icon" href="../imagens/favicon.png">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
 
     <link href="../css/historico.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,7 +24,8 @@
 
             <div class="borda-flex">
 
-                <a href="../../home/home_flex.html"><img id="logo-img" src="../imagens/logo.png" type="img"></a>
+                <a id="topo" href="../../home/html/home_flex.html"><img id="logo-img" src="../imagens/logo.png"
+                        type="img"></a>
 
             </div>
 
@@ -36,16 +42,30 @@
             </div>
 
 
+            <!-- <div class="mt-5">
+
+                <a href="../../login/html/login.html"><button class="bt-header"><img class="img-icones"
+                            src="../imagens/conta.svg"><span class="fonte-forte">Conta</span></button></a>
+
+            </div> -->
+
+            <div class="dropdown show align-self-center">
+                <a class="dropdown-conta dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="img-icones" src="../imagens/conta.svg">
+                    <span class="fonte-forte">Conta</span>
+                </a>
+              
+                <div class="dropdown-menu background-conta-item pt-0 pb-0" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item conta-item" style="display: none;" href="../../login/html/login.html">Login/cadastro</a>
+                  <a class="dropdown-item conta-item" href="../../historico-compra/html/historico.html">Meus pedidos</a>
+                  <a class="dropdown-item conta-item" style="display: block;" href="#" >Sair</a>
+                </div>
+            </div>
+
             <div class="mt-5">
 
-                <button class="bt-header"><img class="img-icones" src="../imagens/conta.svg"><span
-                        class="fonte-forte">Conta</span></button>
-
-            </div>
-            <div class="mt-5 ">
-
                 <div class="div-carrinho">
-                    <button class="bt-header"><img class="img-icones" src="../imagens/carrinho.svg"></button>
+                    <a href="../../carrinho/html/carrinho.html"><img class="img-icones" src="../imagens/carrinho.svg"></a>
                 </div>
                 <div class="div-quantidade">
                     0
@@ -64,22 +84,28 @@
                             <li id="departamentos" class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="navbar-toggler-icon fundo-ham"></span><span
+                                    <span class="navbar-toggler-icon fundo-ham" ></span><span
                                         id="categoria">Categorias</span>
                                 </a>
 
 
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item itens-menu-show" href="#">Ofertas do dia</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Novidades</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Descontos</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Contato</a>
-                                    <a class="dropdown-item " href="#">aqui os departamentos</a>
-
+                                <div class="dropdown-menu pt-0 pb-0 borda-none" aria-labelledby="navbardDropdownMenuLink">
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Ofertas</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Novidades</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Descontos</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria"
+                                        href="../../formulario-contato/html/contato.html">Contato</a>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../categorias-produtos/html/alimentos-basicos.html">Alimentos
+                                        básicos</a>
+                                    <a class="dropdown-item item-categoria" href="#">Higiene pessoal</a>
+                                    <a class="dropdown-item item-categoria" href="#">Limpeza</a>
                                 </div>
+
+
                             </li>
                             <li class="nav-item itens-menu">
-                                <a class="nav-link" href="#">Ofertas<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">Ofertas</a>
                             </li>
                             <li class="nav-item itens-menu">
                                 <a class="nav-link" href="#">Novidades</a>
@@ -88,7 +114,7 @@
                                 <a class="nav-link" href="#">Descontos</a>
                             </li>
                             <li class="nav-item itens-menu">
-                                <a class="nav-link" href="#">Contato</a>
+                                <a class="nav-link" href="../../formulario-contato/html/contato.html">Contato</a>
                             </li>
 
                             <li style="display: none;" id="barra-pesquisa-responsiva" class="nav-item">
@@ -127,13 +153,19 @@
                                     <span class="navbar-toggler-icon fundo-ham"></span>
                                     <span id="categoria">Categorias</span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item itens-menu-show" href="#">Conta</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Ofertas do dia</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Novidades</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Descontos</a>
-                                    <a class="dropdown-item itens-menu-show" href="#">Contato</a>
-                                    <a class="dropdown-item " href="#">aqui os departamentos</a>
+                                <div class="dropdown-menu pt-0 pb-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="../../login/html/login.html">Conta</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Ofertas</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Novidades</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria" href="#">Descontos</a>
+                                    <a class="dropdown-item itens-menu-show item-categoria"
+                                        href="../../formulario-contato/html/contato.html">Contato</a>
+                                    <span class="dropdown-item" style="color: #c81e21; font-weight: bold;"href="#">Departamentos</span>
+                                    <a class="dropdown-item item-categoria"
+                                        href="../../categorias-produtos/html/alimentos-basicos.html">Alimentos
+                                        básicos</a>
+                                    <a class="dropdown-item item-categoria" href="#">Higiene pessoal</a>
+                                    <a class="dropdown-item item-categoria" href="#">Limpeza</a>
 
                                 </div>
                             </li>
@@ -147,14 +179,16 @@
 
             <div class="borda-flex">
 
-                <img id="logo-img" src="../imagens/logo.png" type="img">
+                <a id="topo" href="../../home/html/home_flex.html"><img id="logo-img" src="../imagens/logo.png"
+                    type="img"></a>
 
             </div>
 
             <div class="mt-4 carrinho-tela-pequena">
                 <div class="div-carrinho">
-                    <button class="bt-header"><img class="img-icones" src="../imagens/carrinho.svg"></button>
-                </div>
+                    <a href="../../carrinho/html/carrinho.html"><button class="bt-header"><img class="img-icones"
+                        src="../imagens/carrinho.svg"></button></a>
+        </div>
                 <div class="div-quantidade">
                     0
                 </div>
@@ -178,7 +212,7 @@
             </div>
         </div>
     </div>
-   
+
 
 
     <hr>
@@ -198,7 +232,7 @@
                     <div class="dropdown-menu dropdown-menu-barra-vermelha" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item dropdown-item-barra-vermelha hover-item" href="#">Alterar meus dados</a>
                         <a class="dropdown-item dropdown-item-barra-vermelha hover-item" href="#">Meus cartões</a>
-                        <a class="dropdown-item dropdown-item-barra-vermelha hover-item" href="#">Meus pedidos</a>
+                        <a class="dropdown-item dropdown-item-barra-vermelha hover-item" href="historico.html">Meus pedidos</a>
                     </div>
 
 
@@ -229,7 +263,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item hover-item" href="#">Alterar meus dados</a>
                         <a class="dropdown-item hover-item" href="#">Meus cartões</a>
-                        <a class="dropdown-item hover-item" href="#">Meus pedidos</a>
+                        <a class="dropdown-item hover-item" href="historico.html">Meus pedidos</a>
                     </div>
 
 
@@ -249,9 +283,9 @@
                         Minha conta
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item hover-item" href="#">Alterar meus dados</a>
+                        <a class="dropdown-item hover-item" href="#">Perfil</a>
                         <a class="dropdown-item hover-item" href="#">Meus cartões</a>
-                        <a class="dropdown-item hover-item" href="#">Meus pedidos</a>
+                        <a class="dropdown-item hover-item" href="historico.html">Meus pedidos</a>
                     </div>
                 </div>
             </div>
@@ -720,7 +754,7 @@
                             <a class="link-footer" href="#!">Sustentabilidade</a>
                         </li>
                         <li>
-                            <a class="link-footer" href="#!">Voltar ao topo</a>
+                            <a class="link-footer" href="#topo">Voltar ao topo</a>
                         </li>
                     </ul>
                 </div>
